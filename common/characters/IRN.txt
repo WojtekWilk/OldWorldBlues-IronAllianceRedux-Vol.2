@@ -1,0 +1,87 @@
+characters = {
+	IRN_bulleteater = {
+		name = "Bulleteater"
+		portraits = {
+			civilian = {
+				large = GFX_Portrait_IRN_leader
+			}
+		}
+		corps_commander = {
+			traits = {
+				strong_trait
+				lucky_trait
+				hill_fighter
+			}
+			skill = 3
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 2
+			legacy_id = 100040
+		}
+		country_leader = {
+			desc = Bulleteater_DESC
+			ideology = peoples_militia
+			traits = {
+				cruel_tyrant
+				warmonger
+			}
+			expire = "3000.01.01.01"
+			id = -1
+		}
+		country_leader = {
+			desc = Bulleteater_DESC
+			ideology = technocracy
+			traits = {
+				cruel_tyrant
+				warmonger
+			}
+			expire = "3000.01.01.01"
+			id = -1
+		}
+		country_leader = {
+			desc = Bulleteater_DESC
+			ideology = feudalism
+			traits = {
+				cruel_tyrant
+				warmonger
+			}
+			expire = "3000.01.01.01"
+			id = -1
+		}
+		country_leader = {
+			desc = Bulleteater_DESC
+			ideology = warlordship
+			traits = {
+				cruel_tyrant
+				warmonger
+			}
+			expire = "3000.01.01.01"
+			id = -1
+		}
+	}
+	IRN_the_black_market = {
+		name = IRN_the_black_market
+		portraits = {
+			army = {
+				large = GFX_Portrait_NEW_frazz
+				small = GFX_idea_pit_master_frazz
+			}
+			civilian = {
+				large = GFX_Portrait_NEW_frazz
+				small = GFX_idea_pit_master_frazz
+			}
+		}
+		advisor = {
+			slot = economic_advisor
+			idea_token = IRN_the_black_market
+			traits = {
+				erratic_engineer
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 10
+			}
+		}
+	}
+}
