@@ -1,0 +1,60 @@
+#Black Market Decisions
+IRN_battery_decisions = {
+	IRN_battery_decision_tribalwarpaint = {
+		fire_only_once = yes
+		days_remove = 40
+		ai_will_do = { factor = 10 }
+		visible = { has_idea = IRN_battery }
+		available = { has_idea = IRN_battery }
+		cost = 100
+		remove_effect = {
+			#if = {
+			#	limit = { has_global_flag = debug_logs }
+			#	log = "[GetDateText]: [Root.GetName] brk_decision_build_the_fleet (decision) remove entered"
+			#}
+			set_technology = { tribalwarpaint = 1 } 
+			#if = {
+			#	limit = { has_global_flag = debug_logs }
+			#	log = "[GetDateText]: [Root.GetName] brk_decision_build_the_fleet (decision) remove exited"
+			}
+		}
+	#}
+	IRN_battery_decision_advanced = {
+		fire_only_once = yes
+		days_remove = 40
+		ai_will_do = { factor = 10 }
+		visible = { has_idea = IRN_battery }
+		available = { has_idea = IRN_battery }
+		cost = 100
+		remove_effect = {
+			#if = {
+			#	limit = { has_global_flag = debug_logs }
+			#	log = "[GetDateText]: [Root.GetName] brk_decision_build_graven_ship (decision) remove entered"
+			#}
+			set_technology = { tribalholyorg = 1 }
+			#if = {
+			#	limit = { has_global_flag = debug_logs }
+			#	log = "[GetDateText]: [Root.GetName] brk_decision_build_graven_ship (decision) remove exited"
+		}
+	}
+
+	IRN_battery_decision_composites = {
+		fire_only_once = yes
+		days_remove = 40
+		ai_will_do = { factor = 10 }
+		visible = { has_idea = IRN_battery }
+		available = { has_idea = IRN_battery }		
+		cost = 100
+		remove_effect = {
+			#if = {
+			#	limit = { has_global_flag = debug_logs }
+			#	log = "[GetDateText]: [Root.GetName] brk_decision_build_the_fleet (decision) remove entered"
+			#}
+			set_technology = { noctwarriors = 1 } 			
+			#if = {
+			#	limit = { has_global_flag = debug_logs }
+			#	log = "[GetDateText]: [Root.GetName] brk_decision_build_the_fleet (decision) remove exited"
+			#}
+		}
+	}
+}

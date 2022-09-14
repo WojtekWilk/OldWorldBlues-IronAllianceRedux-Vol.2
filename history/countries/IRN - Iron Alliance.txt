@@ -111,7 +111,8 @@ set_country_flag = elite_doctrine_ai
 set_country_flag = ignore_div_limiter_before_2280
 
 recruit_character = IRN_bulleteater
-recruit_character = IRN_the_black_market
+recruit_character = IRN_black_market
+recruit_character = IRN_battery
 
 add_ideas = {
 	irn_bullet_1_ns
@@ -119,7 +120,8 @@ add_ideas = {
 	petty_gang_conscription
 	undesirables_law_raider
 	tot_economic_mobilisation #They have trouble getting factories to field more then 1 div of PA without this. Nerf when we give IRN real expansion targets
-	IRN_the_black_market
+	IRN_black_market
+	IRN_battery
 }
 
 add_equipment_to_stockpile = {

@@ -60,8 +60,8 @@ characters = {
 			id = -1
 		}
 	}
-	IRN_the_black_market = {
-		name = IRN_the_black_market
+	IRN_black_market = {
+		name = IRN_black_market
 		portraits = {
 			army = {
 				large = GFX_Portrait_NEW_frazz
@@ -74,7 +74,31 @@ characters = {
 		}
 		advisor = {
 			slot = economic_advisor
-			idea_token = IRN_the_black_market
+			idea_token = IRN_black_market
+			traits = {
+				erratic_engineer
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 10
+			}
+		}
+	}
+	IRN_battery = {
+		name = IRN_battery
+		portraits = {
+			army = {
+				large = GFX_Portrait_NEW_frazz
+				small = GFX_idea_pit_master_frazz
+			}
+			civilian = {
+				large = GFX_Portrait_NEW_frazz
+				small = GFX_idea_pit_master_frazz
+			}
+		}
+		advisor = {
+			slot = research_advisor
+			idea_token = IRN_battery
 			traits = {
 				erratic_engineer
 			}
