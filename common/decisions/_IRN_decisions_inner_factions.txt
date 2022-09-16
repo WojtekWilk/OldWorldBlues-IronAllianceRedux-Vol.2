@@ -1,0 +1,21 @@
+#Black Market Decisions
+IRN_inner_factions_decisions = {
+	IRN_inner_factions_decision = {
+		fire_only_once = yes
+		days_remove = 40
+		ai_will_do = { factor = 10 }
+		visible = { always = yes }
+		available = { always = yes }
+		cost = 100
+		remove_effect = {
+			#if = {
+			#	limit = { has_global_flag = debug_logs }
+			#	log = "[GetDateText]: [Root.GetName] brk_decision_build_the_fleet (decision) remove entered"
+			#}
+			set_technology = { tribalwarpaint = 1 } 
+			#if = {
+			#	limit = { has_global_flag = debug_logs }
+			#	log = "[GetDateText]: [Root.GetName] brk_decision_build_the_fleet (decision) remove exited"
+			}
+		}
+}

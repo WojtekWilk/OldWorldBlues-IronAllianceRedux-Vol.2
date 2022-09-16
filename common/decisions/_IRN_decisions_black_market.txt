@@ -1,6 +1,7 @@
 #Black Market Decisions
 IRN_black_market_decisions = {
-	IRN_black_market_decision_spec_ops_equipment = {
+	IRN_black_market_decision_equipment_0 = {
+		priority = 5
 		days_remove = 1
 		ai_will_do = { factor = 10 }
 		visible = { has_idea = IRN_black_market }
@@ -31,30 +32,124 @@ IRN_black_market_decisions = {
 			#}
 		    }
 	    }
-	IRN_black_market_decision_TEST = {
-		#fire_only_once = yes
+	
+	IRN_black_market_decision_equipment_1 = {
+		priority = 4
 		days_remove = 1
 		ai_will_do = { factor = 10 }
 		visible = { has_idea = IRN_black_market }
+        custom_cost_trigger = {
+			set_temp_variable = { temp_cap_cost = 40 }
+			check_variable = {
+				caps_number_display > temp_cap_cost
+			}
+		}
+		custom_cost_text = "caps_decisions_cost_text"
 		available = { has_idea = IRN_black_market }
-		#modifier = { civilian_factory_use = 5 }
-		cost = 0
 		remove_effect = {
 			#if = {
 			#	limit = { has_global_flag = debug_logs }
-			#	log = "[GetDateText]: [Root.GetName] brk_decision_build_graven_ship (decision) remove entered"
+			#	log = "[GetDateText]: [Root.GetName] brk_decision_build_the_fleet (decision) remove entered"
 			#}
-			set_temp_variable = { caps_to_add = 800 }
+            set_temp_variable = { caps_to_add = -40 }
 			add_caps = yes
-            #set_variable = { IRN_special_offer = 1 }
+
+			add_equipment_to_stockpile = {
+                type = power_armor_equipment
+                amount = 500
+                producer = EXE
+            }
 			#if = {
 			#	limit = { has_global_flag = debug_logs }
-			#	log = "[GetDateText]: [Root.GetName] brk_decision_build_graven_ship (decision) remove exited"
-			#}
+			#	log = "[GetDateText]: s[Root.GetName] brk_decision_build_the_fleet (decision) remove exited"
+			#}wss
+		    }
+	    }
+
+	IRN_black_market_decision_equipment_2 = {
+		priority = 3
+		days_remove = 1
+		ai_will_do = { factor = 10 }
+		visible = { has_idea = IRN_black_market }
+        custom_cost_trigger = {
+			set_temp_variable = { temp_cap_cost = 40 }
+			check_variable = {
+				caps_number_display > temp_cap_cost
+			}
 		}
-	}
+		custom_cost_text = "caps_decisions_cost_text"
+		available = { has_idea = IRN_black_market }
+		remove_effect = {
+			#if = {
+			#	limit = { has_global_flag = debug_logs }
+			#	log = "[GetDateText]: [Root.GetName] brk_decision_build_the_fleet (decision) remove entered"
+			#}
+            set_temp_variable = { caps_to_add = -40 }
+			add_caps = yes
+
+			add_equipment_to_stockpile = {
+                type = power_armor_equipment
+                amount = 500
+                producer = EXE
+            }
+			#if = {
+			#	limit = { has_global_flag = debug_logs }
+			#	log = "[GetDateText]: [Root.GetName] brk_decision_build_the_fleet (decision) remove exited"
+			#}
+		    }
+	    }
+
+	IRN_black_market_decision_equipment_3 = {
+		priority = 2
+		days_remove = 1
+		ai_will_do = { factor = 10 }
+		visible = { has_idea = IRN_black_market }
+        custom_cost_trigger = {
+			set_temp_variable = { temp_cap_cost = 40 }
+			check_variable = {
+				caps_number_display > temp_cap_cost
+			}
+		}
+		custom_cost_text = "caps_decisions_cost_text"
+		available = { has_idea = IRN_black_market }
+		remove_effect = {
+			#if = {
+			#	limit = { has_global_flag = debug_logs }
+			#	log = "[GetDateText]: [Root.GetName] brk_decision_build_the_fleet (decision) remove entered"
+			#}
+            set_temp_variable = { caps_to_add = -40 }
+			add_caps = yes
+
+			add_equipment_to_stockpile = {
+                type = power_armor_equipment
+                amount = 500
+                producer = EXE
+            }
+			#if = {
+			#	limit = { has_global_flag = debug_logs }
+			#	log = "[GetDateText]: [Root.GetName] brk_decision_build_the_fleet (decision) remove exited"
+			#}
+		    }
+	    }
+
+	#"IRN_black_market_decision_TEST = {
+	#	#fire_only_once = yes
+	#	priority = 4
+	#	days_remove = 1
+	#	ai_will_do = { factor = 10 }
+	#	visible = { has_idea = IRN_black_market }
+	#	available = { has_idea = IRN_black_market }
+	#	#modifier = { civilian_factory_use = 5 }
+	#	cost = 0
+	#	remove_effect = {
+	#		set_temp_variable = { caps_to_add = 800 }
+	#		add_caps = yes
+     #       #set_variable = { IRN_special_offer = 1 }
+	#	}
+	#}"
 
     IRN_black_market_decision_special_offer_timer = {
+		priority = 1
         visible = { has_idea = IRN_black_market }
         days_mission_timeout = 1
         days_remove = 1
@@ -63,22 +158,40 @@ IRN_black_market_decisions = {
         available = {
            always = no 
         }
-
         timeout_effect  = {
-            IF = { 
-                limit = {check_variable = { IRN_special_offer > 3 }}
-                set_variable = { IRN_special_offer = 1 }
-            } ELSE = {
-                add_to_variable  = { IRN_special_offer = 1 }
-            }
+            add_to_variable = { IRN_special_offer = 1 }
+			modulo_variable = { IRN_special_offer = 4}
             activate_mission = IRN_black_market_decision_special_offer_timer
             }
-
-
-        #{add_to_variable  = { IRN_special_offer = 1 }}
     }
 
+    IRN_black_market_decision_special_offer_0 = {
+		priority = 0
+		#fire_only_once = yes
+		days_remove = 1
+		ai_will_do = { factor = 10 }
+		visible = { check_variable = { IRN_special_offer = 0 }}
+		available = { check_variable = { IRN_special_offer = 0 }}
+        #prerequisite = {IRN_special_offer = 1}
+		#modifier = { civilian_factory_use = 5 }
+		cost = 0
+		remove_effect = {
+			#if = {
+			#	limit = { has_global_flag = debug_logs }
+			#	log = "[GetDateText]: [Root.GetName] brk_decision_build_graven_ship (decision) remove entered"
+			#}
+			#set_temp_variable = { caps_to_add = 2 }
+            #add_to_variable  = { IRN_special_offer = 1 }
+			add_caps = yes
+			#if = {
+			#	limit = { has_global_flag = debug_logs }
+			#	log = "[GetDateText]: [Root.GetName] brk_decision_build_graven_ship (decision) remove exited"
+			#}
+		}
+	}
+
     IRN_black_market_decision_special_offer_1 = {
+		priority = 0
 		#fire_only_once = yes
 		days_remove = 1
 		ai_will_do = { factor = 10 }
@@ -92,8 +205,9 @@ IRN_black_market_decisions = {
 			#	limit = { has_global_flag = debug_logs }
 			#	log = "[GetDateText]: [Root.GetName] brk_decision_build_graven_ship (decision) remove entered"
 			#}
-			#set_temp_variable = { caps_to_add = 2 }
-            add_to_variable  = { IRN_special_offer = 1 }
+			set_temp_variable = { caps_to_add = 10000000 }
+            #add_to_variable  = { IRN_special_offer = 1 }
+            #add_to_variable  = { IRN_special_offer = 1 }
 			add_caps = yes
 			#if = {
 			#	limit = { has_global_flag = debug_logs }
@@ -102,7 +216,8 @@ IRN_black_market_decisions = {
 		}
 	}
 
-    IRN_black_market_decision_special_offer_2 = {
+     IRN_black_market_decision_special_offer_2 = {
+		priority = 0
 		#fire_only_once = yes
 		days_remove = 1
 		ai_will_do = { factor = 10 }
@@ -117,7 +232,7 @@ IRN_black_market_decisions = {
 			#	log = "[GetDateText]: [Root.GetName] brk_decision_build_graven_ship (decision) remove entered"
 			#}
 			set_temp_variable = { caps_to_add = 10000000 }
-            add_to_variable  = { IRN_special_offer = 1 }
+            #add_to_variable  = { IRN_special_offer = 1 }
             #add_to_variable  = { IRN_special_offer = 1 }
 			add_caps = yes
 			#if = {
@@ -126,13 +241,14 @@ IRN_black_market_decisions = {
 			#}
 		}
 	}
-
+# modulo_variable = {4 = 5}
      IRN_black_market_decision_special_offer_3 = {
+		priority = 0
 		#fire_only_once = yes
-		days_remove = 1
+		days_remove = 1 
 		ai_will_do = { factor = 10 }
-		visible = { check_variable = { IRN_special_offer = 3 }}
-		available = { check_variable = { IRN_special_offer = 3 }}
+		visible = { check_variable = {IRN_special_offer = 3}}
+		available = { check_variable = { IRN_special_offer = 3}}
         #prerequisite = {IRN_special_offer = 1}
 		#modifier = { civilian_factory_use = 5 }
 		cost = 0
@@ -142,32 +258,7 @@ IRN_black_market_decisions = {
 			#	log = "[GetDateText]: [Root.GetName] brk_decision_build_graven_ship (decision) remove entered"
 			#}
 			set_temp_variable = { caps_to_add = 10000000 }
-            add_to_variable  = { IRN_special_offer = 1 }
-            #add_to_variable  = { IRN_special_offer = 1 }
-			add_caps = yes
-			#if = {
-			#	limit = { has_global_flag = debug_logs }
-			#	log = "[GetDateText]: [Root.GetName] brk_decision_build_graven_ship (decision) remove exited"
-			#}
-		}
-	}
-
-     IRN_black_market_decision_special_offer_4 = {
-		#fire_only_once = yes
-		days_remove = 1
-		ai_will_do = { factor = 10 }
-		visible = { check_variable = { IRN_special_offer = 4 }}
-		available = { check_variable = { IRN_special_offer = 4 }}
-        #prerequisite = {IRN_special_offer = 1}
-		#modifier = { civilian_factory_use = 5 }
-		cost = 0
-		remove_effect = {
-			#if = {
-			#	limit = { has_global_flag = debug_logs }
-			#	log = "[GetDateText]: [Root.GetName] brk_decision_build_graven_ship (decision) remove entered"
-			#}
-			set_temp_variable = { caps_to_add = 10000000 }
-            add_to_variable  = { IRN_special_offer = -3 }
+            #add_to_variable  = { IRN_special_offer = -3 }
             #add_to_variable  = { IRN_special_offer = 1 }
 			add_caps = yes
 			#if = {

@@ -38,14 +38,22 @@
 #	allowed = { tag = IRN }
 #}
 
+IRN_inner_factions_decisions ={
+	priority = 900
+	scripted_gui = IRN_internal_factions_decision_ui
+	icon = GFX_decision_category_brk_raiding_vic
+	allowed = { tag = IRN }
+}
+
 IRN_black_market_decisions = {
-	priority = 100
+	priority = 899
 	icon = GFX_decision_category_brk_raiding_vic
 	allowed = { tag = IRN }
 }
 
 IRN_battery_decisions = {
-	priority = 99
+	priority = 898
 	icon = GFX_decision_category_brk_raiding_vic
 	allowed = { tag = IRN }
 }
+
