@@ -87,6 +87,12 @@ focus_tree = {
 		prerequisite = {
 			focus = irn_nf_str_2
 		}
+		available = {
+            has_country_leader = {
+				name = "Bulleteater"
+				ruling_only = yes
+			}
+		}
 		x = 6
 		y = 3
 		available_if_capitulated = yes
@@ -128,10 +134,26 @@ focus = {
 		prerequisite = {
 			focus = irn_nf_str_3
 		}
+		available = {
+            has_country_leader = {
+				name = "Bulleteater"
+				ruling_only = yes
+			}
+		}
 		x = 1
 		y = 4
 		available_if_capitulated = yes
+		bypass = {
+			WHD = {
+					all_core_land_owned_by_prev_sphere = yes
+				}
+		}
 		completion_reward = {
+			WHD = {
+				ROOT = {
+					grant_wargoals_on_core_states_of_prev = yes
+				}
+			}
 		}
 	}
 
@@ -176,6 +198,12 @@ focus = {
 		prerequisite = {
 			focus = irn_nf_ex0_0
 		}
+		available = {
+            has_country_leader = {
+				name = "Bulleteater"
+				ruling_only = yes
+			}
+		}
 		x = 1
 		y = 6
 		available_if_capitulated = yes
@@ -191,6 +219,12 @@ focus = {
 		cost = 80.00
 		prerequisite = {
 			focus = irn_nf_str_3
+		}
+		available = {
+            has_country_leader = {
+				name = "Bulleteater"
+				ruling_only = yes
+			}
 		}
 		x = 6
 		y = 4
@@ -228,10 +262,26 @@ focus = {
 			focus = irn_nf_ex0_5
 			focus = irn_nf_ex0_7
 		}
+		available = {
+            has_country_leader = {
+				name = "Bulleteater"
+				ruling_only = yes
+			}
+		}
 		x = 6
 		y = 5
 		available_if_capitulated = yes
+		bypass = {
+			HAN = {
+					all_core_land_owned_by_prev_sphere = yes
+				}
+		}
 		completion_reward = {
+			HAN = {
+				ROOT = {
+					grant_wargoals_on_core_states_of_prev = yes
+				}
+			}
 		}
 	}
 
@@ -281,6 +331,12 @@ focus = {
 			focus = irn_nf_ex0_6
 			focus = irn_nf_ex0_7
 		}
+		available = {
+            has_country_leader = {
+				name = "Bulleteater"
+				ruling_only = yes
+			}
+		}
 		x = 6
 		y = 6
 		available_if_capitulated = yes
@@ -316,10 +372,26 @@ focus = {
 		prerequisite = {
 			focus = irn_nf_str_3
 		}
+		available = {
+            has_country_leader = {
+				name = "Bulleteater"
+				ruling_only = yes
+			}
+		}
 		x = 11
 		y = 4
 		available_if_capitulated = yes
+		bypass = {
+			ROB = {
+					all_core_land_owned_by_prev_sphere = yes
+				}
+		}
 		completion_reward = {
+			ROB = {
+				ROOT = {
+					grant_wargoals_on_core_states_of_prev = yes
+				}
+			}
 		}
 	}
 
@@ -364,6 +436,12 @@ focus = {
 		prerequisite = {
 			focus = irn_nf_ex0_11
 		}
+		available = {
+            has_country_leader = {
+				name = "Bulleteater"
+				ruling_only = yes
+			}
+		}
 		x = 11
 		y = 6
 		available_if_capitulated = yes
@@ -387,10 +465,26 @@ focus = {
 			focus = irn_nf_ex0_3
 			focus = irn_nf_ex0_9
 		}
+		available = {
+            has_country_leader = {
+				name = "Bulleteater"
+				ruling_only = yes
+			}
+		}
 		x = 1
 		y = 7
 		available_if_capitulated = yes
+		bypass = {
+			BAG = {
+					all_core_land_owned_by_prev_sphere = yes
+				}
+		}
 		completion_reward = {
+			BAG = {
+				ROOT = {
+					grant_wargoals_on_core_states_of_prev = yes
+				}
+			}
 		}
 	}
 
@@ -418,6 +512,12 @@ focus = {
 		prerequisite = {
 			focus = irn_nf_ex1_0
 		}
+		available = {
+            has_country_leader = {
+				name = "Bulleteater"
+				ruling_only = yes
+			}
+		}
 		x = 1
 		y = 9
 		available_if_capitulated = yes
@@ -434,10 +534,26 @@ focus = {
 		prerequisite = {
 			focus = irn_nf_ex0_14
 		}
+		available = {
+            has_country_leader = {
+				name = "Bulleteater"
+				ruling_only = yes
+			}
+		}
 		x = 11
 		y = 7
 		available_if_capitulated = yes
+		bypass = {
+			MXC = {
+					all_core_land_owned_by_prev_sphere = yes
+				}
+		}
 		completion_reward = {
+			MXC = {
+				ROOT = {
+					grant_wargoals_on_core_states_of_prev = yes
+				}
+			}
 		}
 	}
 
@@ -482,6 +598,12 @@ focus = {
 		prerequisite = {
 			focus = irn_nf_ex1_3
 		}
+		available = {
+            has_country_leader = {
+				name = "Bulleteater"
+				ruling_only = yes
+			}
+		}
 		x = 11
 		y = 9
 		available_if_capitulated = yes
@@ -503,10 +625,26 @@ focus = {
 		prerequisite = {
 			focus = irn_nf_ex1_2
 		}
+		available = {
+            has_country_leader = {
+				name = "Bulleteater"
+				ruling_only = yes
+			}
+		}
 		x = 1
 		y = 10
 		available_if_capitulated = yes
+		bypass = {
+			LUM = {
+					all_core_land_owned_by_prev_sphere = yes
+				}
+		}
 		completion_reward = {
+			LUM = {
+				ROOT = {
+					grant_wargoals_on_core_states_of_prev = yes
+				}
+			}
 		}
 	}
 
@@ -533,6 +671,12 @@ focus = {
 		cost = 40.00
 		prerequisite = {
 			focus = irn_nf_ex2_0
+		}
+		available = {
+            has_country_leader = {
+				name = "Bulleteater"
+				ruling_only = yes
+			}
 		}
 		x = 2
 		y = 11
@@ -569,10 +713,32 @@ focus = {
 			focus = irn_nf_ex0_9
 			focus = irn_nf_ex1_2
 		}
+		available = {
+            has_country_leader = {
+				name = "Bulleteater"
+				ruling_only = yes
+			}
+		}
 		x = 3
 		y = 10
 		available_if_capitulated = yes
+		bypass = {
+			AND = {
+				YMP = { all_core_land_owned_by_prev_sphere = yes } 
+				GLW = {	all_core_land_owned_by_prev_sphere = yes } 
+				}
+		}
 		completion_reward = {
+			YMP = {
+				ROOT = {
+					grant_wargoals_on_core_states_of_prev = yes
+				}
+			}
+			GLW = {
+				ROOT = {
+					grant_wargoals_on_core_states_of_prev = yes
+				}
+			} 
 		}
 	}
 
@@ -600,6 +766,12 @@ focus = {
 		prerequisite = {
 			focus = irn_nf_ex2_4
 		}
+		available = {
+            has_country_leader = {
+				name = "Bulleteater"
+				ruling_only = yes
+			}
+		}
 		x = 3
 		y = 12
 		available_if_capitulated = yes
@@ -617,10 +789,26 @@ focus = {
 			focus = irn_nf_ex0_9
 			focus = irn_nf_ex1_6
 		}
+		available = {
+            has_country_leader = {
+				name = "Bulleteater"
+				ruling_only = yes
+			}
+		}
 		x = 9
 		y = 10
 		available_if_capitulated = yes
+		bypass = {
+			SCO = {
+					all_core_land_owned_by_prev_sphere = yes
+				}
+		}
 		completion_reward = {
+			SCO = {
+				ROOT = {
+					grant_wargoals_on_core_states_of_prev = yes
+				}
+			}
 		}
 	}
 
@@ -648,6 +836,12 @@ focus = {
 		prerequisite = {
 			focus = irn_nf_ex2_7
 		}
+		available = {
+            has_country_leader = {
+				name = "Bulleteater"
+				ruling_only = yes
+			}
+		}
 		x = 9
 		y = 12
 		available_if_capitulated = yes
@@ -664,10 +858,26 @@ focus = {
 		prerequisite = {
 			focus = irn_nf_ex1_6
 		}
+		available = {
+            has_country_leader = {
+				name = "Bulleteater"
+				ruling_only = yes
+			}
+		}
 		x = 11
 		y = 10
 		available_if_capitulated = yes
+		bypass = {
+			SUN = {
+					all_core_land_owned_by_prev_sphere = yes
+				}
+		}
 		completion_reward = {
+			SUN = {
+				ROOT = {
+					grant_wargoals_on_core_states_of_prev = yes
+				}
+			}
 		}
 	}
 
@@ -695,6 +905,12 @@ focus = {
 		prerequisite = {
 			focus = irn_nf_ex2_10
 		}
+		available = {
+            has_country_leader = {
+				name = "Bulleteater"
+				ruling_only = yes
+			}
+		}
 		x = 11
 		y = 12
 		available_if_capitulated = yes
@@ -715,10 +931,38 @@ focus = {
 		prerequisite = {
 			focus = irn_nf_ex2_6
 		}
+		available = {
+            has_country_leader = {
+				name = "Bulleteater"
+				ruling_only = yes
+			}
+		}
 		x = 3
 		y = 13
 		available_if_capitulated = yes
+		bypass = {
+			AND = { 
+				ORO = { all_core_land_owned_by_prev_sphere = yes }
+				TOB = { all_core_land_owned_by_prev_sphere = yes }
+				DRY = { all_core_land_owned_by_prev_sphere = yes }
+			}
+		}
 		completion_reward = {
+			ORO = {
+				ROOT = {
+					grant_wargoals_on_core_states_of_prev = yes
+				}
+			}
+			TOB = {
+				ROOT = {
+					grant_wargoals_on_core_states_of_prev = yes
+				}
+			}
+			DRY = {
+				ROOT = {
+					grant_wargoals_on_core_states_of_prev = yes
+				}
+			}
 		}
 	}
 
@@ -763,6 +1007,12 @@ focus = {
 		prerequisite = {
 			focus = irn_nf_ex3_0
 		}
+		available = {
+            has_country_leader = {
+				name = "Bulleteater"
+				ruling_only = yes
+			}
+		}
 		x = 3
 		y = 15
 		available_if_capitulated = yes
@@ -780,10 +1030,26 @@ focus = {
 			focus = irn_nf_ex0_9
 			focus = irn_nf_ex2_6
 		}
+		available = {
+            has_country_leader = {
+				name = "Bulleteater"
+				ruling_only = yes
+			}
+		}
 		x = 5
 		y = 13
 		available_if_capitulated = yes
+		bypass = {
+			CLJ = {
+					all_core_land_owned_by_prev_sphere = yes
+				}
+		}
 		completion_reward = {
+			CLJ = {
+				ROOT = {
+					grant_wargoals_on_core_states_of_prev = yes
+				}
+			}
 		}
 	}
 
@@ -811,6 +1077,12 @@ focus = {
 		prerequisite = {
 			focus = irn_nf_ex3_4
 		}
+		available = {
+            has_country_leader = {
+				name = "Bulleteater"
+				ruling_only = yes
+			}
+		}
 		x = 5
 		y = 15
 		available_if_capitulated = yes
@@ -828,10 +1100,26 @@ focus = {
 			focus = irn_nf_ex0_9
 			focus = irn_nf_ex2_9
 		}
+		available = {
+            has_country_leader = {
+				name = "Bulleteater"
+				ruling_only = yes
+			}
+		}
 		x = 7
 		y = 13
 		available_if_capitulated = yes
+		bypass = {
+			INR = {
+					all_core_land_owned_by_prev_sphere = yes
+				}
+		}
 		completion_reward = {
+			INR = {
+				ROOT = {
+					grant_wargoals_on_core_states_of_prev = yes
+				}
+			}
 		}
 	}
 
@@ -859,6 +1147,12 @@ focus = {
 		prerequisite = {
 			focus = irn_nf_ex3_7
 		}
+		available = {
+            has_country_leader = {
+				name = "Bulleteater"
+				ruling_only = yes
+			}
+		}
 		x = 7
 		y = 15
 		available_if_capitulated = yes
@@ -880,10 +1174,17 @@ focus = {
 		prerequisite = {
 			focus = irn_nf_ex3_3
 		}
+		available = {
+            has_country_leader = {
+				name = "Bulleteater"
+				ruling_only = yes
+			}
+		}
 		x = 3
 		y = 16
 		available_if_capitulated = yes
 		completion_reward = {
+			# This focus should change for ppl
 		}
 	}
 
@@ -899,10 +1200,26 @@ focus = {
 			focus = irn_nf_ex3_6
 			focus = irn_nf_ex3_9
 		}
+		available = {
+            has_country_leader = {
+				name = "Bulleteater"
+				ruling_only = yes
+			}
+		}
 		x = 6
 		y = 16
 		available_if_capitulated = yes
+		bypass = {
+			FOR = {
+					all_core_land_owned_by_prev_sphere = yes
+				}
+		}
 		completion_reward = {
+			FOR = {
+				ROOT = {
+					grant_wargoals_on_core_states_of_prev = yes
+				}
+			}
 		}
 	}
 
@@ -930,6 +1247,12 @@ focus = {
 		prerequisite = {
 			focus = irn_nf_ex4_1
 		}
+		available = {
+            has_country_leader = {
+				name = "Bulleteater"
+				ruling_only = yes
+			}
+		}
 		x = 6
 		y = 18
 		available_if_capitulated = yes
@@ -944,10 +1267,26 @@ focus = {
 		prerequisite = {
 			focus = irn_nf_ex3_9
 		}
+		available = {
+            has_country_leader = {
+				name = "Bulleteater"
+				ruling_only = yes
+			}
+		}
 		x = 8
 		y = 16
 		available_if_capitulated = yes
+		bypass = {
+			TTM = {
+					all_core_land_owned_by_prev_sphere = yes
+				}
+		}
 		completion_reward = {
+			TTM = {
+				ROOT = {
+					grant_wargoals_on_core_states_of_prev = yes
+				}
+			}
 		}
 	}
 
@@ -992,6 +1331,12 @@ focus = {
 		prerequisite = {
 			focus = irn_nf_ex4_4
 		}
+		available = {
+            has_country_leader = {
+				name = "Bulleteater"
+				ruling_only = yes
+			}
+		}
 		x = 8
 		y = 18
 		available_if_capitulated = yes
@@ -1013,10 +1358,26 @@ focus = {
 		prerequisite = {
 			focus = irn_nf_ex4_3
 		}
+		available = {
+            has_country_leader = {
+				name = "Bulleteater"
+				ruling_only = yes
+			}
+		}
 		x = 6
 		y = 19
 		available_if_capitulated = yes
+		bypass = {
+			PNT = {
+					all_core_land_owned_by_prev_sphere = yes
+				}
+		}
 		completion_reward = {
+			PNT = {
+				ROOT = {
+					grant_wargoals_on_core_states_of_prev = yes
+				}
+			}
 		}
 	}
 
@@ -1061,6 +1422,12 @@ focus = {
 		prerequisite = {
 			focus = irn_nf_ex5_0
 		}
+		available = {
+            has_country_leader = {
+				name = "Bulleteater"
+				ruling_only = yes
+			}
+		}
 		x = 6
 		y = 21
 		available_if_capitulated = yes
@@ -1085,10 +1452,17 @@ focus = {
 		prerequisite = {
 			focus = irn_nf_ex5_3
 		}
+		available = {
+            has_country_leader = {
+				name = "Bulleteater"
+				ruling_only = yes
+			}
+		}
 		x = 4
 		y = 22
 		available_if_capitulated = yes
 		completion_reward = {
+			# Again this focus should change for ppl
 		}
 	}
 
@@ -1137,6 +1511,12 @@ focus = {
 		}
 		mutually_exclusive = {
 			focus = irn_nf_lac_1
+		}
+		available = {
+            has_country_leader = {
+				name = "Bulleteater"
+				ruling_only = yes
+			}
 		}
 		x = 8
 		y = 9
