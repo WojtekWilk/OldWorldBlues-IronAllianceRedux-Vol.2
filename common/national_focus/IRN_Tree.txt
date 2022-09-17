@@ -166,7 +166,9 @@ focus = {
 		}
 		available = {
 			NOT = {has_completed_focus = irn_nf_ex0_3}
+			WHD = {all_core_land_owned_by_prev_sphere = yes}
 		}
+		
 		x = 0
 		y = 5
 		available_if_capitulated = yes
@@ -183,6 +185,7 @@ focus = {
 		}
 		available = {
 			NOT = {has_completed_focus = irn_nf_ex0_3}
+			WHD = {all_core_land_owned_by_prev_sphere = yes}
 		}
 		x = 2
 		y = 5
@@ -203,6 +206,7 @@ focus = {
 				name = "Bulleteater"
 				ruling_only = yes
 			}
+			WHD = {all_core_land_owned_by_prev_sphere = yes}
 		}
 		x = 1
 		y = 6
@@ -313,6 +317,7 @@ focus = {
 		}
 		available = {
 			NOT = {has_completed_focus = irn_nf_ex0_9}
+			HAN = {all_core_land_owned_by_prev_sphere = yes}
 		}
 		x = 4
 		y = 6
@@ -336,6 +341,7 @@ focus = {
 				name = "Bulleteater"
 				ruling_only = yes
 			}
+			HAN = {all_core_land_owned_by_prev_sphere = yes}
 		}
 		x = 6
 		y = 6
@@ -354,6 +360,7 @@ focus = {
 		}
 		available = {
 			NOT = {has_completed_focus = irn_nf_ex0_9}
+			HAN = {all_core_land_owned_by_prev_sphere = yes}
 		}
 		x = 8
 		y = 6
@@ -404,6 +411,7 @@ focus = {
 		}
 		available = {
 			NOT = {has_completed_focus = irn_nf_ex0_14}
+			ROB = {all_core_land_owned_by_prev_sphere = yes}
 		}
 		x = 10
 		y = 5
@@ -421,6 +429,7 @@ focus = {
 		}
 		available = {
 			NOT = {has_completed_focus = irn_nf_ex0_14}
+			ROB = {all_core_land_owned_by_prev_sphere = yes}
 		}
 		x = 12
 		y = 5
@@ -441,6 +450,7 @@ focus = {
 				name = "Bulleteater"
 				ruling_only = yes
 			}
+			ROB = {all_core_land_owned_by_prev_sphere = yes}
 		}
 		x = 11
 		y = 6
@@ -497,6 +507,7 @@ focus = {
 		}
 		available = {
 			NOT = {has_completed_focus = irn_nf_ex1_2}
+			BAG = {all_core_land_owned_by_prev_sphere = yes}
 		}
 		x = 2
 		y = 8
@@ -517,6 +528,7 @@ focus = {
 				name = "Bulleteater"
 				ruling_only = yes
 			}
+			BAG = {all_core_land_owned_by_prev_sphere = yes}
 		}
 		x = 1
 		y = 9
@@ -566,6 +578,7 @@ focus = {
 		}
 		available = {
 			NOT = {has_completed_focus = irn_nf_ex1_6}
+			MXC = {all_core_land_owned_by_prev_sphere = yes}
 		}
 		x = 10
 		y = 8
@@ -583,6 +596,7 @@ focus = {
 		}
 		available = {
 			NOT = {has_completed_focus = irn_nf_ex1_6}
+			MXC = {all_core_land_owned_by_prev_sphere = yes}
 		}
 		x = 12
 		y = 8
@@ -603,6 +617,7 @@ focus = {
 				name = "Bulleteater"
 				ruling_only = yes
 			}
+			MXC = {all_core_land_owned_by_prev_sphere = yes}
 		}
 		x = 11
 		y = 9
@@ -657,6 +672,7 @@ focus = {
 		}
 		available = {
 			NOT = {has_completed_focus = irn_nf_ex2_2}
+			LUM = {all_core_land_owned_by_prev_sphere = yes}
 		}
 		x = 0
 		y = 11
@@ -677,6 +693,7 @@ focus = {
 				name = "Bulleteater"
 				ruling_only = yes
 			}
+			LUM = {all_core_land_owned_by_prev_sphere = yes}
 		}
 		x = 2
 		y = 11
@@ -694,6 +711,7 @@ focus = {
 		}
 		available = {
 			NOT = {has_completed_focus = irn_nf_ex2_2}
+			LUM = {all_core_land_owned_by_prev_sphere = yes}
 		}
 		x = 1
 		y = 12
@@ -751,6 +769,8 @@ focus = {
 		}
 		available = {
 			NOT = {has_completed_focus = irn_nf_ex2_6}
+			YMP = {all_core_land_owned_by_prev_sphere = yes}
+			GLW = {all_core_land_owned_by_prev_sphere = yes}
 		}
 		x = 4
 		y = 11
@@ -771,6 +791,8 @@ focus = {
 				name = "Bulleteater"
 				ruling_only = yes
 			}
+			YMP = {all_core_land_owned_by_prev_sphere = yes}
+			GLW = {all_core_land_owned_by_prev_sphere = yes}
 		}
 		x = 3
 		y = 12
@@ -821,6 +843,7 @@ focus = {
 		}
 		available = {
 			NOT = {has_completed_focus = irn_nf_ex2_9}
+			SCO = {all_core_land_owned_by_prev_sphere = yes}
 		}
 		x = 8
 		y = 11
@@ -841,6 +864,7 @@ focus = {
 				name = "Bulleteater"
 				ruling_only = yes
 			}
+			SCO = {all_core_land_owned_by_prev_sphere = yes}
 		}
 		x = 9
 		y = 12
@@ -890,6 +914,7 @@ focus = {
 		}
 		available = {
 			NOT = {has_completed_focus = irn_nf_ex2_12}
+			SUN = {all_core_land_owned_by_prev_sphere = yes}
 		}
 		x = 10
 		y = 11
@@ -910,6 +935,7 @@ focus = {
 				name = "Bulleteater"
 				ruling_only = yes
 			}
+			SUN = {all_core_land_owned_by_prev_sphere = yes}
 		}
 		x = 11
 		y = 12
@@ -1034,6 +1060,9 @@ focus = {
 		}
 		available = {
 			NOT = {has_completed_focus = irn_nf_ex3_6}
+			ORO = { all_core_land_owned_by_prev_sphere = yes }
+			TOB = { all_core_land_owned_by_prev_sphere = yes }
+			DRY = { all_core_land_owned_by_prev_sphere = yes }
 		}
 		x = 2
 		y = 14
@@ -1051,6 +1080,9 @@ focus = {
 		}
 		available = {
 			NOT = {has_completed_focus = irn_nf_ex3_6}
+			ORO = { all_core_land_owned_by_prev_sphere = yes }
+			TOB = { all_core_land_owned_by_prev_sphere = yes }
+			DRY = { all_core_land_owned_by_prev_sphere = yes }
 		}
 		x = 4
 		y = 14
@@ -1071,6 +1103,9 @@ focus = {
 				name = "Bulleteater"
 				ruling_only = yes
 			}
+			ORO = { all_core_land_owned_by_prev_sphere = yes }
+			TOB = { all_core_land_owned_by_prev_sphere = yes }
+			DRY = { all_core_land_owned_by_prev_sphere = yes }
 		}
 		x = 3
 		y = 15
@@ -1121,6 +1156,7 @@ focus = {
 		}
 		available = {
 			NOT = {has_completed_focus = irn_nf_ex3_9}
+			CLJ = { all_core_land_owned_by_prev_sphere = yes}
 		}
 		x = 6
 		y = 14
@@ -1141,6 +1177,7 @@ focus = {
 				name = "Bulleteater"
 				ruling_only = yes
 			}
+			CLJ = { all_core_land_owned_by_prev_sphere = yes}
 		}
 		x = 5
 		y = 15
@@ -1191,6 +1228,7 @@ focus = {
 		}
 		available = {
 			NOT = {has_completed_focus = irn_nf_ex3_12}
+			INR = {	all_core_land_owned_by_prev_sphere = yes}
 		}
 		x = 8
 		y = 14
@@ -1211,6 +1249,7 @@ focus = {
 				name = "Bulleteater"
 				ruling_only = yes
 			}
+			INR = {	all_core_land_owned_by_prev_sphere = yes}
 		}
 		x = 7
 		y = 15
@@ -1242,6 +1281,11 @@ focus = {
 		x = 3
 		y = 16
 		available_if_capitulated = yes
+		bypass = {
+			ROOT = {
+				owns_state = 456
+				}
+		}
 		completion_reward = {
 			# This focus should change for ppl
 		}
@@ -1291,6 +1335,7 @@ focus = {
 		}
 		available = {
 			NOT = {has_completed_focus = irn_nf_ex4_3}
+			FOR = {all_core_land_owned_by_prev_sphere = yes}
 		}
 		x = 5
 		y = 17
@@ -1311,6 +1356,7 @@ focus = {
 				name = "Bulleteater"
 				ruling_only = yes
 			}
+			FOR = {all_core_land_owned_by_prev_sphere = yes}
 		}
 		x = 6
 		y = 18
@@ -1358,6 +1404,7 @@ focus = {
 		}
 		available = {
 			NOT = {has_completed_focus = irn_nf_ex4_7}
+			TTM = {all_core_land_owned_by_prev_sphere = yes}
 		}
 		x = 7
 		y = 17
@@ -1375,6 +1422,7 @@ focus = {
 		}
 		available = {
 			NOT = {has_completed_focus = irn_nf_ex4_7}
+			TTM = {all_core_land_owned_by_prev_sphere = yes}
 		}
 		x = 9
 		y = 17
@@ -1395,6 +1443,7 @@ focus = {
 				name = "Bulleteater"
 				ruling_only = yes
 			}
+			TTM = {all_core_land_owned_by_prev_sphere = yes}
 		}
 		x = 8
 		y = 18
@@ -1449,6 +1498,7 @@ focus = {
 		}
 		available = {
 			NOT = {has_completed_focus = irn_nf_ex5_3}
+			PNT = {all_core_land_owned_by_prev_sphere = yes}
 		}
 		x = 7
 		y = 20
@@ -1466,6 +1516,7 @@ focus = {
 		}
 		available = {
 			NOT = {has_completed_focus = irn_nf_ex5_3}
+			PNT = {all_core_land_owned_by_prev_sphere = yes}
 		}
 		x = 5
 		y = 20
@@ -1486,6 +1537,7 @@ focus = {
 				name = "Bulleteater"
 				ruling_only = yes
 			}
+			PNT = {all_core_land_owned_by_prev_sphere = yes}
 		}
 		x = 6
 		y = 21
@@ -1520,9 +1572,20 @@ focus = {
 		x = 4
 		y = 22
 		available_if_capitulated = yes
-		completion_reward = {
-			# Again this focus should change for ppl
+		bypass = {
+			CES = {
+					all_core_land_owned_by_prev_sphere = yes
+				}
 		}
+		completion_reward = {
+			CES = {
+				ROOT = {
+					grant_wargoals_on_core_states_of_prev = yes
+				}
+			}
+		}
+			# Again this focus should change for ppl
+		
 	}
 
 ####################################
@@ -1536,6 +1599,9 @@ focus = {
 		icon = GFX_goals_IRN_Fist
 		cost = 40.00
 		prerequisite = {
+		}
+		available = {
+			any_neighbor_country = {tag = LAC}
 		}
 		x = 6
 		y = 8
@@ -1580,7 +1646,17 @@ focus = {
 		x = 8
 		y = 9
 		available_if_capitulated = yes
+		bypass = {
+			LAC = {
+					all_core_land_owned_by_prev_sphere = yes
+				}
+		}
 		completion_reward = {
+			LAC = {
+				ROOT = {
+					grant_wargoals_on_core_states_of_prev = yes
+				}
+			}
 		}
 	}
 
