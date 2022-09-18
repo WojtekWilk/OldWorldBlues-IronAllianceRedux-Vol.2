@@ -82,16 +82,13 @@ focus_tree = {
 
 	focus = {
 		id = irn_nf_str_3
-		icon = GFX_goals_IRN_Fist
+		icon = GFX_goal_generic_focus_magazine_gunsandbullets_plasma
 		cost = 40.00
 		prerequisite = {
 			focus = irn_nf_str_2
 		}
 		available = {
-            has_country_leader = {
-				name = "Bulleteater"
-				ruling_only = yes
-			}
+			has_government = ruler
 		}
 		x = 6
 		y = 3
@@ -129,16 +126,13 @@ focus_tree = {
 
 focus = {
 		id = irn_nf_ex0_0
-		icon = GFX_goals_IRN_Fist
+		icon = GFX_goal_generic_focus_magazine_gunsandbullets_plasma
 		cost = 80.00
 		prerequisite = {
 			focus = irn_nf_str_3
 		}
 		available = {
-            has_country_leader = {
-				name = "Bulleteater"
-				ruling_only = yes
-			}
+            has_government = ruler
 		}
 		x = 1
 		y = 4
@@ -159,12 +153,16 @@ focus = {
 
 focus = {
 		id = irn_nf_ex0_1
-		icon = GFX_goals_IRN_Fist
+		icon = GFX_goal_pal_pr_cyclops
 		cost = 40.00
 		prerequisite = {
 			focus = irn_nf_ex0_0
 		}
 		available = {
+			OR = {
+				has_idea = irn_bullet_1_ns
+				has_government = people
+				}
 			NOT = {has_completed_focus = irn_nf_ex0_3}
 			WHD = {all_core_land_owned_by_prev_sphere = yes}
 		}
@@ -178,12 +176,16 @@ focus = {
 
 focus = {
 		id = irn_nf_ex0_2
-		icon = GFX_goals_IRN_Fist
+		icon = GFX_focus_bgr_goals_relcom
 		cost = 40.00
 		prerequisite = {
 			focus = irn_nf_ex0_0
 		}
 		available = {
+			OR = {
+				has_idea = irn_bullet_1_ns
+				has_government = intellectuals
+				}
 			NOT = {has_completed_focus = irn_nf_ex0_3}
 			WHD = {all_core_land_owned_by_prev_sphere = yes}
 		}
@@ -196,16 +198,13 @@ focus = {
 
 focus = {
 		id = irn_nf_ex0_3
-		icon = GFX_goals_IRN_Fist
+		icon = GFX_goal_generic_focus_magazine_gunsandbullets_plasma
 		cost = 40.00
 		prerequisite = {
 			focus = irn_nf_ex0_0
 		}
 		available = {
-            has_country_leader = {
-				name = "Bulleteater"
-				ruling_only = yes
-			}
+            has_government = ruler
 			WHD = {all_core_land_owned_by_prev_sphere = yes}
 		}
 		x = 1
@@ -219,16 +218,13 @@ focus = {
 
 focus = {
 		id = irn_nf_ex0_4
-		icon = GFX_goals_IRN_Fist
+		icon = GFX_goal_generic_focus_magazine_gunsandbullets_plasma
 		cost = 80.00
 		prerequisite = {
 			focus = irn_nf_str_3
 		}
 		available = {
-            has_country_leader = {
-				name = "Bulleteater"
-				ruling_only = yes
-			}
+            has_government = ruler
 		}
 		x = 6
 		y = 4
@@ -239,7 +235,7 @@ focus = {
 
 focus = {
 		id = irn_nf_ex0_5
-		icon = GFX_goals_IRN_Fist
+		icon = GFX_goal_pal_pr_cyclops
 		cost = 80.00
 		prerequisite = {
 			focus = irn_nf_ex0_4
@@ -247,6 +243,12 @@ focus = {
 		mutually_exclusive = {
 			focus = irn_nf_ex0_6
 			focus = irn_nf_ex0_7
+		}
+		available = {
+			OR = {
+				has_idea = irn_bullet_1_ns
+				has_government = people
+				}
 		}
 		x = 4
 		y = 5
@@ -257,7 +259,7 @@ focus = {
 
 focus = {
 		id = irn_nf_ex0_6
-		icon = GFX_goals_IRN_Fist
+		icon = GFX_goal_generic_focus_magazine_gunsandbullets_plasma
 		cost = 80.00
 		prerequisite = {
 			focus = irn_nf_ex0_4
@@ -267,10 +269,7 @@ focus = {
 			focus = irn_nf_ex0_7
 		}
 		available = {
-            has_country_leader = {
-				name = "Bulleteater"
-				ruling_only = yes
-			}
+            has_government = ruler
 		}
 		x = 6
 		y = 5
@@ -291,7 +290,7 @@ focus = {
 
 focus = {
 		id = irn_nf_ex0_7
-		icon = GFX_goals_IRN_Fist
+		icon = GFX_focus_bgr_goals_relcom
 		cost = 80.00
 		prerequisite = {
 			focus = irn_nf_ex0_4
@@ -299,6 +298,12 @@ focus = {
 		mutually_exclusive = {
 			focus = irn_nf_ex0_5
 			focus = irn_nf_ex0_6
+		}
+		available = {
+			OR = {
+				has_idea = irn_bullet_1_ns
+				has_government = intellectuals
+				}
 		}
 		x = 8
 		y = 5
@@ -310,12 +315,16 @@ focus = {
 
 focus = {
 		id = irn_nf_ex0_8
-		icon = GFX_goals_IRN_Fist
+		icon = GFX_goal_pal_pr_cyclops
 		cost = 40.00
 		prerequisite = {
 			focus = irn_nf_ex0_5
 		}
 		available = {
+			OR = {
+				has_idea = irn_bullet_1_ns
+				has_government = people
+				}
 			NOT = {has_completed_focus = irn_nf_ex0_9}
 			HAN = {all_core_land_owned_by_prev_sphere = yes}
 		}
@@ -329,7 +338,7 @@ focus = {
 
 focus = {
 		id = irn_nf_ex0_9
-		icon = GFX_goals_IRN_Fist
+		icon = GFX_goal_generic_focus_magazine_gunsandbullets_plasma
 		cost = 40.00
 		prerequisite = {
 			focus = irn_nf_ex0_5
@@ -337,10 +346,7 @@ focus = {
 			focus = irn_nf_ex0_7
 		}
 		available = {
-            has_country_leader = {
-				name = "Bulleteater"
-				ruling_only = yes
-			}
+            has_government = ruler
 			HAN = {all_core_land_owned_by_prev_sphere = yes}
 		}
 		x = 6
@@ -353,12 +359,16 @@ focus = {
 
 focus = {
 		id = irn_nf_ex0_10
-		icon = GFX_goals_IRN_Fist
+		icon = GFX_focus_bgr_goals_relcom
 		cost = 40.00
 		prerequisite = {
 			focus = irn_nf_ex0_7
 		}
 		available = {
+			OR = {
+				has_idea = irn_bullet_1_ns
+				has_government = intellectuals
+				}
 			NOT = {has_completed_focus = irn_nf_ex0_9}
 			HAN = {all_core_land_owned_by_prev_sphere = yes}
 		}
@@ -374,16 +384,13 @@ focus = {
 
 focus = {
 		id = irn_nf_ex0_11
-		icon = GFX_goals_IRN_Fist
+		icon = GFX_goal_generic_focus_magazine_gunsandbullets_plasma
 		cost = 80.00
 		prerequisite = {
 			focus = irn_nf_str_3
 		}
 		available = {
-            has_country_leader = {
-				name = "Bulleteater"
-				ruling_only = yes
-			}
+            has_government = ruler
 		}
 		x = 11
 		y = 4
@@ -404,12 +411,16 @@ focus = {
 
 focus = {
 		id = irn_nf_ex0_12
-		icon = GFX_goals_IRN_Fist
+		icon = GFX_focus_bgr_goals_relcom
 		cost = 40.00
 		prerequisite = {
 			focus = irn_nf_ex0_11
 		}
 		available = {
+			OR = {
+				has_idea = irn_bullet_1_ns
+				has_government = intellectuals
+				}
 			NOT = {has_completed_focus = irn_nf_ex0_14}
 			ROB = {all_core_land_owned_by_prev_sphere = yes}
 		}
@@ -422,12 +433,16 @@ focus = {
 
 focus = {
 		id = irn_nf_ex0_13
-		icon = GFX_goals_IRN_Fist
+		icon = GFX_focus_bgr_goals_relcom
 		cost = 40.00
 		prerequisite = {
 			focus = irn_nf_ex0_11
 		}
 		available = {
+			OR = {
+				has_idea = irn_bullet_1_ns
+				has_government = intellectuals
+				}
 			NOT = {has_completed_focus = irn_nf_ex0_14}
 			ROB = {all_core_land_owned_by_prev_sphere = yes}
 		}
@@ -440,16 +455,13 @@ focus = {
 
 focus = {
 		id = irn_nf_ex0_14
-		icon = GFX_goals_IRN_Fist
+		icon = GFX_goal_generic_focus_magazine_gunsandbullets_plasma
 		cost = 40.00
 		prerequisite = {
 			focus = irn_nf_ex0_11
 		}
 		available = {
-            has_country_leader = {
-				name = "Bulleteater"
-				ruling_only = yes
-			}
+            has_government = ruler
 			ROB = {all_core_land_owned_by_prev_sphere = yes}
 		}
 		x = 11
@@ -469,17 +481,14 @@ focus = {
 
 focus = {
 		id = irn_nf_ex1_0
-		icon = GFX_goals_IRN_Fist
+		icon = GFX_goal_generic_focus_magazine_gunsandbullets_plasma
 		cost = 80.00
 		prerequisite = {
 			focus = irn_nf_ex0_3
 			focus = irn_nf_ex0_9
 		}
 		available = {
-            has_country_leader = {
-				name = "Bulleteater"
-				ruling_only = yes
-			}
+            has_government = ruler
 		}
 		x = 1
 		y = 7
@@ -500,12 +509,16 @@ focus = {
 
 focus = {
 		id = irn_nf_ex1_1
-		icon = GFX_goals_IRN_Fist
+		icon = GFX_goal_pal_pr_cyclops
 		cost = 40.00
 		prerequisite = {
 			focus = irn_nf_ex1_0
 		}
 		available = {
+			OR = {
+				has_idea = irn_bullet_1_ns
+				has_government = people
+				}
 			NOT = {has_completed_focus = irn_nf_ex1_2}
 			BAG = {all_core_land_owned_by_prev_sphere = yes}
 		}
@@ -518,16 +531,13 @@ focus = {
 
 focus = {
 		id = irn_nf_ex1_2
-		icon = GFX_goals_IRN_Fist
+		icon = GFX_goal_generic_focus_magazine_gunsandbullets_plasma
 		cost = 40.00
 		prerequisite = {
 			focus = irn_nf_ex1_0
 		}
 		available = {
-            has_country_leader = {
-				name = "Bulleteater"
-				ruling_only = yes
-			}
+            has_government = ruler
 			BAG = {all_core_land_owned_by_prev_sphere = yes}
 		}
 		x = 1
@@ -541,16 +551,13 @@ focus = {
 
 focus = {
 		id = irn_nf_ex1_3
-		icon = GFX_goals_IRN_Fist
+		icon = GFX_goal_generic_focus_magazine_gunsandbullets_plasma
 		cost = 80.00
 		prerequisite = {
 			focus = irn_nf_ex0_14
 		}
 		available = {
-            has_country_leader = {
-				name = "Bulleteater"
-				ruling_only = yes
-			}
+            has_government = ruler
 		}
 		x = 11
 		y = 7
@@ -571,12 +578,16 @@ focus = {
 
 focus = {
 		id = irn_nf_ex1_4
-		icon = GFX_goals_IRN_Fist
+		icon = GFX_focus_bgr_goals_relcom
 		cost = 40.00
 		prerequisite = {
 			focus = irn_nf_ex1_3
 		}
 		available = {
+			OR = {
+				has_idea = irn_bullet_1_ns
+				has_government = intellectuals
+				}
 			NOT = {has_completed_focus = irn_nf_ex1_6}
 			MXC = {all_core_land_owned_by_prev_sphere = yes}
 		}
@@ -589,12 +600,16 @@ focus = {
 
 focus = {
 		id = irn_nf_ex1_5
-		icon = GFX_goals_IRN_Fist
+		icon = GFX_focus_bgr_goals_relcom
 		cost = 40.00
 		prerequisite = {
 			focus = irn_nf_ex1_3
 		}
 		available = {
+			OR = {
+				has_idea = irn_bullet_1_ns
+				has_government = intellectuals
+				}
 			NOT = {has_completed_focus = irn_nf_ex1_6}
 			MXC = {all_core_land_owned_by_prev_sphere = yes}
 		}
@@ -607,16 +622,13 @@ focus = {
 
 focus = {
 		id = irn_nf_ex1_6
-		icon = GFX_goals_IRN_Fist
+		icon = GFX_goal_generic_focus_magazine_gunsandbullets_plasma
 		cost = 40.00
 		prerequisite = {
 			focus = irn_nf_ex1_3
 		}
 		available = {
-            has_country_leader = {
-				name = "Bulleteater"
-				ruling_only = yes
-			}
+            has_government = ruler
 			MXC = {all_core_land_owned_by_prev_sphere = yes}
 		}
 		x = 11
@@ -635,16 +647,13 @@ focus = {
 
 focus = {
 		id = irn_nf_ex2_0
-		icon = GFX_goals_IRN_Fist
+		icon = GFX_goal_generic_focus_magazine_gunsandbullets_plasma
 		cost = 80.00
 		prerequisite = {
 			focus = irn_nf_ex1_2
 		}
 		available = {
-            has_country_leader = {
-				name = "Bulleteater"
-				ruling_only = yes
-			}
+            has_government = ruler
 		}
 		x = 1
 		y = 10
@@ -665,12 +674,16 @@ focus = {
 
 focus = {
 		id = irn_nf_ex2_1
-		icon = GFX_goals_IRN_Fist
+		icon = GFX_goal_pal_pr_cyclops
 		cost = 40.00
 		prerequisite = {
 			focus = irn_nf_ex2_0
 		}
 		available = {
+			OR = {
+				has_idea = irn_bullet_1_ns
+				has_government = people
+				}
 			NOT = {has_completed_focus = irn_nf_ex2_2}
 			LUM = {all_core_land_owned_by_prev_sphere = yes}
 		}
@@ -683,16 +696,13 @@ focus = {
 
 focus = {
 		id = irn_nf_ex2_2
-		icon = GFX_goals_IRN_Fist
+		icon = GFX_goal_generic_focus_magazine_gunsandbullets_plasma
 		cost = 40.00
 		prerequisite = {
 			focus = irn_nf_ex2_0
 		}
 		available = {
-            has_country_leader = {
-				name = "Bulleteater"
-				ruling_only = yes
-			}
+            has_government = ruler
 			LUM = {all_core_land_owned_by_prev_sphere = yes}
 		}
 		x = 2
@@ -704,12 +714,16 @@ focus = {
 
 focus = {
 		id = irn_nf_ex2_3
-		icon = GFX_goals_IRN_Fist
+		icon = GFX_focus_bgr_goals_relcom
 		cost = 40.00
 		prerequisite = {
 			focus = irn_nf_ex2_1
 		}
 		available = {
+			OR = {
+				has_idea = irn_bullet_1_ns
+				has_government = intellectuals
+				}
 			NOT = {has_completed_focus = irn_nf_ex2_2}
 			LUM = {all_core_land_owned_by_prev_sphere = yes}
 		}
@@ -725,17 +739,14 @@ focus = {
 
 focus = {
 		id = irn_nf_ex2_4
-		icon = GFX_goals_IRN_Fist
+		icon = GFX_goal_generic_focus_magazine_gunsandbullets_plasma
 		cost = 80.00
 		prerequisite = {
 			focus = irn_nf_ex0_9
 			focus = irn_nf_ex1_2
 		}
 		available = {
-            has_country_leader = {
-				name = "Bulleteater"
-				ruling_only = yes
-			}
+            has_government = ruler
 		}
 		x = 3
 		y = 10
@@ -762,12 +773,16 @@ focus = {
 
 focus = {
 		id = irn_nf_ex2_5
-		icon = GFX_goals_IRN_Fist
+		icon = GFX_goal_pal_pr_cyclops
 		cost = 40.00
 		prerequisite = {
 			focus = irn_nf_ex2_4
 		}
 		available = {
+			OR = {
+				has_idea = irn_bullet_1_ns
+				has_government = people
+				}
 			NOT = {has_completed_focus = irn_nf_ex2_6}
 			YMP = {all_core_land_owned_by_prev_sphere = yes}
 			GLW = {all_core_land_owned_by_prev_sphere = yes}
@@ -781,16 +796,13 @@ focus = {
 
 focus = {
 		id = irn_nf_ex2_6
-		icon = GFX_goals_IRN_Fist
+		icon = GFX_goal_generic_focus_magazine_gunsandbullets_plasma
 		cost = 40.00
 		prerequisite = {
 			focus = irn_nf_ex2_4
 		}
 		available = {
-            has_country_leader = {
-				name = "Bulleteater"
-				ruling_only = yes
-			}
+            has_government = ruler
 			YMP = {all_core_land_owned_by_prev_sphere = yes}
 			GLW = {all_core_land_owned_by_prev_sphere = yes}
 		}
@@ -805,17 +817,14 @@ focus = {
 
 focus = {
 		id = irn_nf_ex2_7
-		icon = GFX_goals_IRN_Fist
+		icon = GFX_goal_generic_focus_magazine_gunsandbullets_plasma
 		cost = 80.00
 		prerequisite = {
 			focus = irn_nf_ex0_9
 			focus = irn_nf_ex1_6
 		}
 		available = {
-            has_country_leader = {
-				name = "Bulleteater"
-				ruling_only = yes
-			}
+            has_government = ruler
 		}
 		x = 9
 		y = 10
@@ -836,12 +845,16 @@ focus = {
 
 focus = {
 		id = irn_nf_ex2_8
-		icon = GFX_goals_IRN_Fist
+		icon = GFX_goal_pal_pr_cyclops
 		cost = 40.00
 		prerequisite = {
 			focus = irn_nf_ex2_7
 		}
 		available = {
+			OR = {
+				has_idea = irn_bullet_1_ns
+				has_government = people
+				}
 			NOT = {has_completed_focus = irn_nf_ex2_9}
 			SCO = {all_core_land_owned_by_prev_sphere = yes}
 		}
@@ -854,16 +867,13 @@ focus = {
 
 focus = {
 		id = irn_nf_ex2_9
-		icon = GFX_goals_IRN_Fist
+		icon = GFX_goal_generic_focus_magazine_gunsandbullets_plasma
 		cost = 40.00
 		prerequisite = {
 			focus = irn_nf_ex2_7
 		}
 		available = {
-            has_country_leader = {
-				name = "Bulleteater"
-				ruling_only = yes
-			}
+            has_government = ruler
 			SCO = {all_core_land_owned_by_prev_sphere = yes}
 		}
 		x = 9
@@ -877,16 +887,13 @@ focus = {
 
 focus = {
 		id = irn_nf_ex2_10
-		icon = GFX_goals_IRN_Fist
+		icon = GFX_goal_generic_focus_magazine_gunsandbullets_plasma
 		cost = 80.00
 		prerequisite = {
 			focus = irn_nf_ex1_6
 		}
 		available = {
-            has_country_leader = {
-				name = "Bulleteater"
-				ruling_only = yes
-			}
+            has_government = ruler
 		}
 		x = 11
 		y = 10
@@ -907,12 +914,16 @@ focus = {
 
 focus = {
 		id = irn_nf_ex2_11
-		icon = GFX_goals_IRN_Fist
+		icon = GFX_goal_pal_pr_cyclops
 		cost = 40.00
 		prerequisite = {
 			focus = irn_nf_ex2_10
 		}
 		available = {
+			OR = {
+				has_idea = irn_bullet_1_ns
+				has_government = people
+				}
 			NOT = {has_completed_focus = irn_nf_ex2_12}
 			SUN = {all_core_land_owned_by_prev_sphere = yes}
 		}
@@ -925,16 +936,13 @@ focus = {
 
 focus = {
 		id = irn_nf_ex2_12
-		icon = GFX_goals_IRN_Fist
+		icon = GFX_goal_generic_focus_magazine_gunsandbullets_plasma
 		cost = 40.00
 		prerequisite = {
 			focus = irn_nf_ex2_10
 		}
 		available = {
-            has_country_leader = {
-				name = "Bulleteater"
-				ruling_only = yes
-			}
+            has_government = ruler
 			SUN = {all_core_land_owned_by_prev_sphere = yes}
 		}
 		x = 11
@@ -952,16 +960,13 @@ focus = {
 
 focus = {
 		id = irn_nf_ex3_0
-		icon = GFX_goals_IRN_Fist
+		icon = GFX_goal_generic_focus_magazine_gunsandbullets_plasma
 		cost = 40.00
 		prerequisite = {
 			focus = irn_nf_ex2_6
 		}
 		available = {
-            has_country_leader = {
-				name = "Bulleteater"
-				ruling_only = yes
-			}
+            has_government = ruler
 		}
 		x = 1
 		y = 13
@@ -972,12 +977,16 @@ focus = {
 
 focus = {
 		id = irn_nf_ex3_1
-		icon = GFX_goals_IRN_Fist
+		icon = GFX_focus_bgr_goals_relcom
 		cost = 40.00
 		prerequisite = {
 			focus = irn_nf_ex3_0
 		}
 		available = {
+			OR = {
+				has_idea = irn_bullet_1_ns
+				has_government = intellectuals
+				}
 			NOT = {has_completed_focus = irn_nf_ex3_0}
 		}
 		x = 0
@@ -989,16 +998,13 @@ focus = {
 
 focus = {
 		id = irn_nf_ex3_2
-		icon = GFX_goals_IRN_Fist
+		icon = GFX_goal_generic_focus_magazine_gunsandbullets_plasma
 		cost = 40.00
 		prerequisite = {
 			focus = irn_nf_ex3_0
 		}
 		available = {
-            has_country_leader = {
-				name = "Bulleteater"
-				ruling_only = yes
-			}
+            has_government = ruler
 		}
 		x = 1
 		y = 15
@@ -1011,16 +1017,13 @@ focus = {
 
 focus = {
 		id = irn_nf_ex3_3
-		icon = GFX_goals_IRN_Fist
+		icon = GFX_goal_generic_focus_magazine_gunsandbullets_plasma
 		cost = 80.00
 		prerequisite = {
 			focus = irn_nf_ex2_6
 		}
 		available = {
-            has_country_leader = {
-				name = "Bulleteater"
-				ruling_only = yes
-			}
+            has_government = ruler
 		}
 		x = 3
 		y = 13
@@ -1053,12 +1056,16 @@ focus = {
 
 focus = {
 		id = irn_nf_ex3_4
-		icon = GFX_goals_IRN_Fist
+		icon = GFX_focus_bgr_goals_relcom
 		cost = 40.00
 		prerequisite = {
 			focus = irn_nf_ex3_3
 		}
 		available = {
+			OR = {
+				has_idea = irn_bullet_1_ns
+				has_government = intellectuals
+				}
 			NOT = {has_completed_focus = irn_nf_ex3_6}
 			ORO = { all_core_land_owned_by_prev_sphere = yes }
 			TOB = { all_core_land_owned_by_prev_sphere = yes }
@@ -1073,12 +1080,16 @@ focus = {
 
 focus = {
 		id = irn_nf_ex3_5
-		icon = GFX_goals_IRN_Fist
+		icon = GFX_focus_bgr_goals_relcom
 		cost = 40.00
 		prerequisite = {
 			focus = irn_nf_ex3_3
 		}
 		available = {
+			OR = {
+				has_idea = irn_bullet_1_ns
+				has_government = intellectuals
+				}
 			NOT = {has_completed_focus = irn_nf_ex3_6}
 			ORO = { all_core_land_owned_by_prev_sphere = yes }
 			TOB = { all_core_land_owned_by_prev_sphere = yes }
@@ -1093,16 +1104,13 @@ focus = {
 
 focus = {
 		id = irn_nf_ex3_6
-		icon = GFX_goals_IRN_Fist
+		icon = GFX_goal_generic_focus_magazine_gunsandbullets_plasma
 		cost = 40.00
 		prerequisite = {
 			focus = irn_nf_ex3_3
 		}
 		available = {
-            has_country_leader = {
-				name = "Bulleteater"
-				ruling_only = yes
-			}
+            has_government = ruler
 			ORO = { all_core_land_owned_by_prev_sphere = yes }
 			TOB = { all_core_land_owned_by_prev_sphere = yes }
 			DRY = { all_core_land_owned_by_prev_sphere = yes }
@@ -1117,7 +1125,7 @@ focus = {
 # Claim Jumpers
 
 focus = {
-		id = irn_nf_ex3_7
+		id = GFX_goal_generic_focus_magazine_gunsandbullets_plasma
 		icon = GFX_goals_IRN_Fist
 		cost = 80.00
 		prerequisite = {
@@ -1125,10 +1133,7 @@ focus = {
 			focus = irn_nf_ex2_6
 		}
 		available = {
-            has_country_leader = {
-				name = "Bulleteater"
-				ruling_only = yes
-			}
+            has_government = ruler
 		}
 		x = 5
 		y = 13
@@ -1149,12 +1154,16 @@ focus = {
 
 focus = {
 		id = irn_nf_ex3_8
-		icon = GFX_goals_IRN_Fist
+		icon = GFX_goal_pal_pr_cyclops
 		cost = 40.00
 		prerequisite = {
 			focus = irn_nf_ex3_7
 		}
 		available = {
+			OR = {
+				has_idea = irn_bullet_1_ns
+				has_government = people
+				}
 			NOT = {has_completed_focus = irn_nf_ex3_9}
 			CLJ = { all_core_land_owned_by_prev_sphere = yes}
 		}
@@ -1167,16 +1176,13 @@ focus = {
 
 focus = {
 		id = irn_nf_ex3_9
-		icon = GFX_goals_IRN_Fist
+		icon = GFX_goal_generic_focus_magazine_gunsandbullets_plasma
 		cost = 40.00
 		prerequisite = {
 			focus = irn_nf_ex3_7
 		}
 		available = {
-            has_country_leader = {
-				name = "Bulleteater"
-				ruling_only = yes
-			}
+            has_government = ruler
 			CLJ = { all_core_land_owned_by_prev_sphere = yes}
 		}
 		x = 5
@@ -1190,17 +1196,14 @@ focus = {
 
 focus = {
 		id = irn_nf_ex3_10
-		icon = GFX_goals_IRN_Fist
+		icon = GFX_goal_generic_focus_magazine_gunsandbullets_plasma
 		cost = 80.00
 		prerequisite = {
 			focus = irn_nf_ex0_9
 			focus = irn_nf_ex2_9
 		}
 		available = {
-            has_country_leader = {
-				name = "Bulleteater"
-				ruling_only = yes
-			}
+            has_government = ruler
 		}
 		x = 7
 		y = 13
@@ -1221,12 +1224,16 @@ focus = {
 
 focus = {
 		id = irn_nf_ex3_11
-		icon = GFX_goals_IRN_Fist
+		icon = GFX_goal_pal_pr_cyclops
 		cost = 40.00
 		prerequisite = {
 			focus = irn_nf_ex3_10
 		}
 		available = {
+			OR = {
+				has_idea = irn_bullet_1_ns
+				has_government = people
+				}
 			NOT = {has_completed_focus = irn_nf_ex3_12}
 			INR = {	all_core_land_owned_by_prev_sphere = yes}
 		}
@@ -1239,16 +1246,13 @@ focus = {
 
 focus = {
 		id = irn_nf_ex3_12
-		icon = GFX_goals_IRN_Fist
+		icon = GFX_goal_generic_focus_magazine_gunsandbullets_plasma
 		cost = 40.00
 		prerequisite = {
 			focus = irn_nf_ex3_10
 		}
 		available = {
-            has_country_leader = {
-				name = "Bulleteater"
-				ruling_only = yes
-			}
+            has_government = ruler
 			INR = {	all_core_land_owned_by_prev_sphere = yes}
 		}
 		x = 7
@@ -1267,16 +1271,13 @@ focus = {
 
 focus = {
 		id = irn_nf_ex4_0
-		icon = GFX_goals_IRN_Fist
+		icon = GFX_goal_generic_focus_magazine_gunsandbullets_plasma
 		cost = 80.00
 		prerequisite = {
 			focus = irn_nf_ex3_6
 		}
 		available = {
-            has_country_leader = {
-				name = "Bulleteater"
-				ruling_only = yes
-			}
+            has_government = ruler
 		}
 		x = 3
 		y = 16
@@ -1296,7 +1297,7 @@ focus = {
 
 focus = {
 		id = irn_nf_ex4_1
-		icon = GFX_goals_IRN_Fist
+		icon = GFX_goal_generic_focus_magazine_gunsandbullets_plasma
 		cost = 80.00
 		prerequisite = {
 			focus = irn_nf_ex3_6
@@ -1304,10 +1305,7 @@ focus = {
 			focus = irn_nf_ex3_12
 		}
 		available = {
-            has_country_leader = {
-				name = "Bulleteater"
-				ruling_only = yes
-			}
+            has_government = ruler
 		}
 		x = 6
 		y = 16
@@ -1328,12 +1326,16 @@ focus = {
 
 focus = {
 		id = irn_nf_ex4_2
-		icon = GFX_goals_IRN_Fist
+		icon = GFX_goal_pal_pr_cyclops
 		cost = 40.00
 		prerequisite = {
 			focus = irn_nf_ex4_1
 		}
 		available = {
+			OR = {
+				has_idea = irn_bullet_1_ns
+				has_government = people
+				}
 			NOT = {has_completed_focus = irn_nf_ex4_3}
 			FOR = {all_core_land_owned_by_prev_sphere = yes}
 		}
@@ -1346,16 +1348,13 @@ focus = {
 
 focus = {
 		id = irn_nf_ex4_3
-		icon = GFX_goals_IRN_Fist
+		icon = GFX_goal_generic_focus_magazine_gunsandbullets_plasma
 		cost = 40.00
 		prerequisite = {
 			focus = irn_nf_ex4_1
 		}
 		available = {
-            has_country_leader = {
-				name = "Bulleteater"
-				ruling_only = yes
-			}
+            has_government = ruler
 			FOR = {all_core_land_owned_by_prev_sphere = yes}
 		}
 		x = 6
@@ -1367,16 +1366,13 @@ focus = {
 
 focus = {
 		id = irn_nf_ex4_4
-		icon = GFX_goals_IRN_Fist
+		icon = GFX_goal_generic_focus_magazine_gunsandbullets_plasma
 		cost = 80.00
 		prerequisite = {
 			focus = irn_nf_ex3_12
 		}
 		available = {
-            has_country_leader = {
-				name = "Bulleteater"
-				ruling_only = yes
-			}
+            has_government = ruler
 		}
 		x = 8
 		y = 16
@@ -1397,12 +1393,16 @@ focus = {
 
 focus = {
 		id = irn_nf_ex4_5
-		icon = GFX_goals_IRN_Fist
+		icon = GFX_focus_bgr_goals_relcom
 		cost = 40.00
 		prerequisite = {
 			focus = irn_nf_ex4_4
 		}
 		available = {
+			OR = {
+				has_idea = irn_bullet_1_ns
+				has_government = intellectuals
+				}
 			NOT = {has_completed_focus = irn_nf_ex4_7}
 			TTM = {all_core_land_owned_by_prev_sphere = yes}
 		}
@@ -1415,12 +1415,16 @@ focus = {
 
 focus = {
 		id = irn_nf_ex4_6
-		icon = GFX_goals_IRN_Fist
+		icon = GFX_focus_bgr_goals_relcom
 		cost = 40.00
 		prerequisite = {
 			focus = irn_nf_ex4_4
 		}
 		available = {
+			OR = {
+				has_idea = irn_bullet_1_ns
+				has_government = intellectuals
+				}
 			NOT = {has_completed_focus = irn_nf_ex4_7}
 			TTM = {all_core_land_owned_by_prev_sphere = yes}
 		}
@@ -1433,16 +1437,13 @@ focus = {
 
 focus = {
 		id = irn_nf_ex4_7
-		icon = GFX_goals_IRN_Fist
+		icon = GFX_goal_generic_focus_magazine_gunsandbullets_plasma
 		cost = 40.00
 		prerequisite = {
 			focus = irn_nf_ex4_4
 		}
 		available = {
-            has_country_leader = {
-				name = "Bulleteater"
-				ruling_only = yes
-			}
+            has_government = ruler
 			TTM = {all_core_land_owned_by_prev_sphere = yes}
 		}
 		x = 8
@@ -1461,16 +1462,13 @@ focus = {
 
 focus = {
 		id = irn_nf_ex5_0
-		icon = GFX_goals_IRN_Fist
+		icon = GFX_goal_generic_focus_magazine_gunsandbullets_plasma
 		cost = 80.00
 		prerequisite = {
 			focus = irn_nf_ex4_3
 		}
 		available = {
-            has_country_leader = {
-				name = "Bulleteater"
-				ruling_only = yes
-			}
+            has_government = ruler
 		}
 		x = 6
 		y = 19
@@ -1491,30 +1489,16 @@ focus = {
 
 focus = {
 		id = irn_nf_ex5_1
-		icon = GFX_goals_IRN_Fist
+		icon = GFX_focus_bgr_goals_relcom
 		cost = 40.00
 		prerequisite = {
 			focus = irn_nf_ex5_0
 		}
 		available = {
-			NOT = {has_completed_focus = irn_nf_ex5_3}
-			PNT = {all_core_land_owned_by_prev_sphere = yes}
-		}
-		x = 7
-		y = 20
-		available_if_capitulated = yes
-		completion_reward = {
-		}
-	}
-
-focus = {
-		id = irn_nf_ex5_2
-		icon = GFX_goals_IRN_Fist
-		cost = 40.00
-		prerequisite = {
-			focus = irn_nf_ex5_0
-		}
-		available = {
+			OR = {
+				has_idea = irn_bullet_1_ns
+				has_government = intellectuals
+				}
 			NOT = {has_completed_focus = irn_nf_ex5_3}
 			PNT = {all_core_land_owned_by_prev_sphere = yes}
 		}
@@ -1526,17 +1510,36 @@ focus = {
 	}
 
 focus = {
-		id = irn_nf_ex5_3
-		icon = GFX_goals_IRN_Fist
+		id = irn_nf_ex5_2
+		icon = GFX_focus_bgr_goals_relcom
 		cost = 40.00
 		prerequisite = {
 			focus = irn_nf_ex5_0
 		}
 		available = {
-            has_country_leader = {
-				name = "Bulleteater"
-				ruling_only = yes
-			}
+			OR = {
+				has_idea = irn_bullet_1_ns
+				has_government = intellectuals
+				}
+			NOT = {has_completed_focus = irn_nf_ex5_3}
+			PNT = {all_core_land_owned_by_prev_sphere = yes}
+		}
+		x = 7
+		y = 20
+		available_if_capitulated = yes
+		completion_reward = {
+		}
+	}
+
+focus = {
+		id = irn_nf_ex5_3
+		icon = GFX_goal_generic_focus_magazine_gunsandbullets_plasma
+		cost = 40.00
+		prerequisite = {
+			focus = irn_nf_ex5_0
+		}
+		available = {
+            has_government = ruler
 			PNT = {all_core_land_owned_by_prev_sphere = yes}
 		}
 		x = 6
@@ -1555,7 +1558,7 @@ focus = {
 
 focus = {
 		id = irn_nf_ex6_0
-		icon = GFX_goals_IRN_Fist
+		icon = GFX_goal_generic_focus_magazine_gunsandbullets_plasma
 		cost = 80.00
 		prerequisite = {
 			focus = irn_nf_ex4_0
@@ -1564,10 +1567,7 @@ focus = {
 			focus = irn_nf_ex5_3
 		}
 		available = {
-            has_country_leader = {
-				name = "Bulleteater"
-				ruling_only = yes
-			}
+            has_government = ruler
 		}
 		x = 4
 		y = 22
@@ -1629,7 +1629,7 @@ focus = {
 
 focus = {
 		id = irn_nf_lac_2
-		icon = GFX_goals_IRN_Fist
+		icon = GFX_goal_generic_focus_magazine_gunsandbullets_plasma
 		cost = 40.00
 		prerequisite = {
 			focus = irn_nf_lac_0
@@ -1638,10 +1638,7 @@ focus = {
 			focus = irn_nf_lac_1
 		}
 		available = {
-            has_country_leader = {
-				name = "Bulleteater"
-				ruling_only = yes
-			}
+            has_government = ruler
 		}
 		x = 8
 		y = 9
@@ -1667,7 +1664,7 @@ focus = {
 # Focuses improving the military doctrine reaserch; + some XP
 
 focus = {
-		id = irn_nf_hcm_0
+		id = irn_nf_hmc_0
 		icon = GFX_goals_IRN_Fist
 		cost = 40.00
 		prerequisite = {
@@ -1678,29 +1675,67 @@ focus = {
 		y = 4
 		available_if_capitulated = yes
 		completion_reward = {
+			army_experience = 50
 		}
 	}
 
 focus = {
-		id = irn_nf_hcm_1
+		id = irn_nf_hmc_1
 		icon = GFX_goals_IRN_Fist
 		cost = 40.00
 		prerequisite = {
-			focus = irn_nf_hcm_0
+			focus = irn_nf_hmc_0
 		}
 		x = 15
 		y = 5
+		available_if_capitulated = yes
+		completion_reward = {
+			add_tech_bonus = {
+				name = land_doc_bonus
+				bonus = 0.5
+				uses = 2
+				category = cat_land_doctrine
+			}
+		}
+	}
+
+focus = {
+		id = irn_nf_hmc_2
+		icon = GFX_goal_pal_pr_cyclops
+		cost = 40.00
+		prerequisite = {
+			focus = irn_nf_hmc_1
+		}
+		mutually_exclusive = {
+			focus = irn_nf_hmc_3
+			focus = irn_nf_hmc_4
+		}
+		available = {
+			OR = {
+				has_idea = irn_bullet_1_ns
+				has_government = people
+				}
+		}
+		x = 13
+		y = 6
 		available_if_capitulated = yes
 		completion_reward = {
 		}
 	}
 
 focus = {
-		id = irn_nf_hcm_2
-		icon = GFX_goals_IRN_Fist
+		id = irn_nf_hmc_3
+		icon = GFX_goal_generic_focus_magazine_gunsandbullets_plasma
 		cost = 40.00
 		prerequisite = {
-			focus = irn_nf_hcm_1
+			focus = irn_nf_hmc_1
+		}
+		mutually_exclusive = {
+			focus = irn_nf_hmc_2
+			focus = irn_nf_hmc_4
+		}
+		available = {
+			has_government = ruler
 		}
 		x = 15
 		y = 6
@@ -1710,15 +1745,41 @@ focus = {
 	}
 
 focus = {
-		id = irn_nf_hcm_3
-		icon = GFX_goals_IRN_Fist
+		id = irn_nf_hmc_4
+		icon = GFX_focus_bgr_goals_relcom
 		cost = 40.00
 		prerequisite = {
-			focus = irn_nf_hcm_2
+			focus = irn_nf_hmc_1
 		}
 		mutually_exclusive = {
-			focus = irn_nf_hcm_4
-			focus = irn_nf_hcm_5
+			focus = irn_nf_hmc_2
+			focus = irn_nf_hmc_3
+		}
+		available = {
+			OR = {
+				has_idea = irn_bullet_1_ns
+				has_government = intellectuals
+				}
+		}
+		x = 17
+		y = 6
+		available_if_capitulated = yes
+		completion_reward = {
+		}
+	}
+
+focus = {
+		id = irn_nf_hmc_5
+		icon = GFX_goal_pal_pr_cyclops
+		cost = 40.00
+		prerequisite = {
+			focus = irn_nf_hmc_2
+		}
+		available = {
+			OR = {
+				has_idea = irn_bullet_1_ns
+				has_government = people
+				}
 		}
 		x = 13
 		y = 7
@@ -1728,33 +1789,17 @@ focus = {
 	}
 
 focus = {
-		id = irn_nf_hcm_4
-		icon = GFX_goals_IRN_Fist
+		id = irn_nf_hmc_6
+		icon = GFX_focus_bgr_goals_relcom
 		cost = 40.00
 		prerequisite = {
-			focus = irn_nf_hcm_2
+			focus = irn_nf_hmc_4
 		}
-		mutually_exclusive = {
-			focus = irn_nf_hcm_3
-			focus = irn_nf_hcm_5
-		}
-		x = 15
-		y = 7
-		available_if_capitulated = yes
-		completion_reward = {
-		}
-	}
-
-focus = {
-		id = irn_nf_hcm_5
-		icon = GFX_goals_IRN_Fist
-		cost = 40.00
-		prerequisite = {
-			focus = irn_nf_hcm_2
-		}
-		mutually_exclusive = {
-			focus = irn_nf_hcm_3
-			focus = irn_nf_hcm_4
+		available = {
+			OR = {
+				has_idea = irn_bullet_1_ns
+				has_government = intellectuals
+				}
 		}
 		x = 17
 		y = 7
@@ -1764,12 +1809,12 @@ focus = {
 	}
 
 focus = {
-		id = irn_nf_hcm_6
+		id = irn_nf_hmc_7
 		icon = GFX_goals_IRN_Fist
 		cost = 40.00
 		prerequisite = {
-			focus = irn_nf_hcm_3
-			focus = irn_nf_hcm_4
+			focus = irn_nf_hmc_2
+			focus = irn_nf_hmc_3
 		}
 		x = 14
 		y = 8
@@ -1779,12 +1824,12 @@ focus = {
 	}
 
 focus = {
-		id = irn_nf_hcm_7
+		id = irn_nf_hmc_8
 		icon = GFX_goals_IRN_Fist
 		cost = 40.00
 		prerequisite = {
-			focus = irn_nf_hcm_4
-			focus = irn_nf_hcm_5
+			focus = irn_nf_hmc_3
+			focus = irn_nf_hmc_4
 		}
 		x = 16
 		y = 8
@@ -1793,42 +1838,18 @@ focus = {
 		}
 	}
 
-focus = {
-		id = irn_nf_hcm_8
-		icon = GFX_goals_IRN_Fist
-		cost = 40.00
-		prerequisite = {
-			focus = irn_nf_hcm_3
-		}
-		x = 13
-		y = 9
-		available_if_capitulated = yes
-		completion_reward = {
-		}
-	}
 
 focus = {
-		id = irn_nf_hcm_9
-		icon = GFX_goals_IRN_Fist
+		id = irn_nf_hmc_9
+		icon = GFX_goal_generic_focus_magazine_gunsandbullets_plasma
 		cost = 40.00
 		prerequisite = {
-			focus = irn_nf_hcm_4
+			focus = irn_nf_hmc_3
+		}
+		available = {
+			has_government = ruler
 		}
 		x = 15
-		y = 9
-		available_if_capitulated = yes
-		completion_reward = {
-		}
-	}
-
-focus = {
-		id = irn_nf_hcm_10
-		icon = GFX_goals_IRN_Fist
-		cost = 40.00
-		prerequisite = {
-			focus = irn_nf_hcm_5
-		}
-		x = 17
 		y = 9
 		available_if_capitulated = yes
 		completion_reward = {
