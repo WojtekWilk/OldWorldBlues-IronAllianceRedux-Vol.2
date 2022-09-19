@@ -26,7 +26,7 @@ focus_tree = {
 		id = irn_nf_str_0
 		icon = GFX_goals_IRN_Fist
 		cost = 7.00
-		x = 11
+		x = 21
 		y = 0
 		available_if_capitulated = yes
 		completion_reward = {
@@ -43,7 +43,7 @@ focus_tree = {
 		prerequisite = {
 			focus = irn_nf_str_0
 		}
-		x = 11
+		x = 21
 		y = 1
 		available_if_capitulated = yes
 		completion_reward = {
@@ -60,7 +60,7 @@ focus_tree = {
 		prerequisite = {
 			focus = irn_nf_str_1
 		}
-		x = 11
+		x = 21
 		y = 2
 		available_if_capitulated = yes
 		completion_reward = {
@@ -105,7 +105,25 @@ focus_tree = {
 		prerequisite = {
 			focus = irn_nf_str_2
 		}
-		x = 20
+		x = 21
+		y = 3
+		available_if_capitulated = yes
+		completion_reward = {
+		}
+	}
+
+
+	focus = {
+		id = irn_nf_str_5
+		icon = GFX_goal_WBH_Slaves
+		cost = 40.00
+		prerequisite = {
+			focus = irn_nf_str_2
+		}
+		available = {
+			NOT = {has_idea = irn_bullet_1_ns}
+		}
+		x = 40
 		y = 3
 		available_if_capitulated = yes
 		completion_reward = {
@@ -971,7 +989,17 @@ focus = {
 		x = 1
 		y = 13
 		available_if_capitulated = yes
+		bypass = {
+			VLS = {
+					all_core_land_owned_by_prev_sphere = yes
+				}
+		}
 		completion_reward = {
+			VLS = {
+				ROOT = {
+					grant_wargoals_on_core_states_of_prev = yes
+				}
+			}
 		}
 	}
 
@@ -988,6 +1016,7 @@ focus = {
 				has_government = intellectuals
 				}
 			NOT = {has_completed_focus = irn_nf_ex3_0}
+			VLS = {all_core_land_owned_by_prev_sphere = yes}
 		}
 		x = 0
 		y = 14
@@ -1005,6 +1034,7 @@ focus = {
 		}
 		available = {
             has_government = ruler
+			VLS = {all_core_land_owned_by_prev_sphere = yes}
 		}
 		x = 1
 		y = 15
@@ -1599,12 +1629,14 @@ focus = {
 		icon = GFX_goals_IRN_Fist
 		cost = 40.00
 		prerequisite = {
+			focus = irn_nf_str_3
+			focus = irn_nf_str_4
 		}
 		available = {
 			any_neighbor_country = {tag = LAC}
 		}
-		x = 6
-		y = 8
+		x = 19
+		y = 4
 		available_if_capitulated = yes
 		completion_reward = {
 		}
@@ -1612,7 +1644,7 @@ focus = {
 
 focus = {
 		id = irn_nf_lac_1
-		icon = GFX_goals_IRN_Fist
+		icon = GFX_goal_generic_focus_magazine_gunsandbullets_plasma
 		cost = 40.00
 		prerequisite = {
 			focus = irn_nf_lac_0
@@ -1620,8 +1652,11 @@ focus = {
 		mutually_exclusive = {
 			focus = irn_nf_lac_2
 		}
-		x = 4
-		y = 9
+		available = {
+            has_government = ruler
+		}
+		x = 18
+		y = 5
 		available_if_capitulated = yes
 		completion_reward = {
 		}
@@ -1629,7 +1664,7 @@ focus = {
 
 focus = {
 		id = irn_nf_lac_2
-		icon = GFX_goal_generic_focus_magazine_gunsandbullets_plasma
+		icon = GFX_goals_IRN_Fist
 		cost = 40.00
 		prerequisite = {
 			focus = irn_nf_lac_0
@@ -1637,11 +1672,8 @@ focus = {
 		mutually_exclusive = {
 			focus = irn_nf_lac_1
 		}
-		available = {
-            has_government = ruler
-		}
-		x = 8
-		y = 9
+		x = 20
+		y = 5
 		available_if_capitulated = yes
 		bypass = {
 			LAC = {
@@ -1872,7 +1904,7 @@ focus = {
 		mutually_exclusive = {
 			focus = irn_nf_bkm_0
 		}
-		x = 22
+		x = 23
 		y = 5
 		available_if_capitulated = yes
 		completion_reward = {
@@ -1886,7 +1918,7 @@ focus = {
 		prerequisite = {
 			focus = irn_nf_civ_0
 		}
-		x = 20
+		x = 21
 		y = 6
 		available_if_capitulated = yes
 		completion_reward = {
@@ -1900,7 +1932,7 @@ focus = {
 		prerequisite = {
 			focus = irn_nf_civ_0
 		}
-		x = 22
+		x = 23
 		y = 6
 		available_if_capitulated = yes
 		completion_reward = {
@@ -1917,7 +1949,7 @@ focus = {
 		prerequisite = {
 			focus = irn_nf_blt_2
 		}
-		x = 20
+		x = 21
 		y = 7
 		available_if_capitulated = yes
 		completion_reward = {
@@ -1931,7 +1963,7 @@ focus = {
 		prerequisite = {
 			focus = irn_nf_civ_2
 		}
-		x = 22
+		x = 23
 		y = 7
 		available_if_capitulated = yes
 		completion_reward = {
@@ -1945,7 +1977,7 @@ focus = {
 		prerequisite = {
 			focus = irn_nf_civ_4
 		}
-		x = 20
+		x = 21
 		y = 8
 		available_if_capitulated = yes
 		completion_reward = {
@@ -1959,7 +1991,7 @@ focus = {
 		prerequisite = {
 			focus = irn_nf_civ_4
 		}
-		x = 22
+		x = 23
 		y = 8
 		available_if_capitulated = yes
 		completion_reward = {
@@ -1973,7 +2005,7 @@ focus = {
 		prerequisite = {
 			focus = irn_nf_civ_6
 		}
-		x = 20
+		x = 21
 		y = 9
 		available_if_capitulated = yes
 		completion_reward = {
@@ -1987,7 +2019,7 @@ focus = {
 		prerequisite = {
 			focus = irn_nf_civ_6
 		}
-		x = 22
+		x = 23
 		y = 9
 		available_if_capitulated = yes
 		completion_reward = {
@@ -2008,7 +2040,7 @@ focus = {
 		prerequisite = {
 			focus = irn_nf_str_4
 		}
-		x = 25
+		x = 26
 		y = 4
 		available_if_capitulated = yes
 		completion_reward = {
@@ -2023,7 +2055,7 @@ focus = {
 			focus = irn_nf_civ_0
 			focus = irn_nf_bkm_0
 		}
-		x = 25
+		x = 26
 		y = 6
 		available_if_capitulated = yes
 		completion_reward = {
@@ -2037,7 +2069,7 @@ focus = {
 		prerequisite = {
 			focus = irn_nf_mil_1
 		}
-		x = 25
+		x = 26
 		y = 7
 		available_if_capitulated = yes
 		completion_reward = {
@@ -2051,7 +2083,7 @@ focus = {
 		prerequisite = {
 			focus = irn_nf_mil_2
 		}
-		x = 25
+		x = 26
 		y = 8
 		available_if_capitulated = yes
 		completion_reward = {
@@ -2065,7 +2097,7 @@ focus = {
 		prerequisite = {
 			focus = irn_nf_mil_3
 		}
-		x = 25
+		x = 26
 		y = 9
 		available_if_capitulated = yes
 		completion_reward = {
@@ -2083,7 +2115,7 @@ focus = {
 			focus = irn_nf_civ_8
 			focus = irn_nf_bkm_8
 		}
-		x = 25
+		x = 26
 		y = 10
 		available_if_capitulated = yes
 		completion_reward = {
@@ -2106,7 +2138,7 @@ focus = {
 		mutually_exclusive = {
 			focus = irn_nf_civ_0
 		}
-		x = 28
+		x = 29
 		y = 5
 		available_if_capitulated = yes
 		completion_reward = {
@@ -2120,7 +2152,7 @@ focus = {
 		prerequisite = {
 			focus = irn_nf_bkm_0
 		}
-		x = 30
+		x = 31
 		y = 6
 		available_if_capitulated = yes
 		completion_reward = {
@@ -2134,7 +2166,7 @@ focus = {
 		prerequisite = {
 			focus = irn_nf_bkm_0
 		}
-		x = 28
+		x = 29
 		y = 6
 		available_if_capitulated = yes
 		completion_reward = {
@@ -2151,7 +2183,7 @@ focus = {
 		#prerequisite = {
 		#	focus = irn_nf_blt_2
 		#}
-		x = 30
+		x = 31
 		y = 7
 		available_if_capitulated = yes
 		completion_reward = {
@@ -2165,7 +2197,7 @@ focus = {
 		prerequisite = {
 			focus = irn_nf_bkm_2
 		}
-		x = 28
+		x = 29
 		y = 7
 		available_if_capitulated = yes
 		completion_reward = {
@@ -2179,7 +2211,7 @@ focus = {
 		prerequisite = {
 			focus = irn_nf_bkm_4
 		}
-		x = 30
+		x = 31
 		y = 8
 		available_if_capitulated = yes
 		completion_reward = {
@@ -2193,7 +2225,7 @@ focus = {
 		prerequisite = {
 			focus = irn_nf_bkm_4
 		}
-		x = 28
+		x = 29
 		y = 8
 		available_if_capitulated = yes
 		completion_reward = {
@@ -2207,7 +2239,7 @@ focus = {
 		prerequisite = {
 			focus = irn_nf_bkm_6
 		}
-		x = 30
+		x = 31
 		y = 9
 		available_if_capitulated = yes
 		completion_reward = {
@@ -2221,7 +2253,7 @@ focus = {
 		prerequisite = {
 			focus = irn_nf_bkm_6
 		}
-		x = 28
+		x = 29
 		y = 9
 		available_if_capitulated = yes
 		completion_reward = {
@@ -2237,7 +2269,7 @@ focus = {
 
 focus = {
 		id = irn_nf_drg_0
-		icon = GFX_goals_IRN_Fist
+		icon = GFX_goal_generic_smooch_focus
 		cost = 40.00
 		prerequisite = {
 			focus = irn_nf_str_4
@@ -2917,7 +2949,7 @@ focus = {
 		prerequisite = {
 			focus = irn_nf_str_3
 		}
-		x = 17
+		x = 19
 		y = 4
 		available_if_capitulated = yes
 		completion_reward = {
@@ -3202,7 +3234,7 @@ focus = {
 		available = {
 			has_completed_focus = irn_nf_exp_3
 		}
-		x = 17
+		x = 19
 		y = 7
 		available_if_capitulated = yes
 		completion_reward = {
@@ -3257,7 +3289,7 @@ focus = {
 		available = {
 			has_completed_focus = irn_nf_exp_9
 		}
-		x = 17
+		x = 19
 		y = 9
 		available_if_capitulated = yes
 		completion_reward = {
@@ -3305,7 +3337,7 @@ focus = {
 		prerequisite = {
 			focus = irn_nf_ind_1
 		}
-		x = 23
+		x = 22
 		y = 6
 		available_if_capitulated = yes
 		completion_reward = {
@@ -3331,7 +3363,7 @@ focus = {
 		available = {
 			has_completed_focus = irn_nf_vlt_2
 		}
-		x = 25
+		x = 26
 		y = 7
 		available_if_capitulated = yes
 		completion_reward = {
@@ -3348,7 +3380,7 @@ focus = {
 		prerequisite = {
 			focus = irn_nf_indt_1
 		}
-		x = 23
+		x = 22
 		y = 7
 		available_if_capitulated = yes
 		completion_reward = {
@@ -3371,7 +3403,7 @@ focus = {
 		prerequisite = {
 			focus = irn_nf_indt_2
 		}
-		x = 23
+		x = 22
 		y = 8
 		available_if_capitulated = yes
 		completion_reward = {
@@ -3397,7 +3429,7 @@ focus = {
 		available = {
 			has_completed_focus = irn_nf_vlt_3
 		}
-		x = 25
+		x = 26
 		y = 9
 		available_if_capitulated = yes
 		completion_reward = {
@@ -3417,7 +3449,7 @@ focus = {
 		prerequisite = {
 			focus = irn_nf_indt_3
 		}
-		x = 23
+		x = 22
 		y = 9
 		available_if_capitulated = yes
 		completion_reward = {
@@ -4089,7 +4121,7 @@ focus = {
 		mutually_exclusive = {
 			focus = irn_nf_bos_5
 		}
-		x = 14
+		x = 13
 		y = 10
 		available_if_capitulated = yes
 		completion_reward = {
@@ -4113,7 +4145,7 @@ focus = {
 		available = {
 			has_idea = irn_zombie_decay
 		}
-		x = 18
+		x = 16
 		y = 10
 		available_if_capitulated = yes
 		completion_reward = {
@@ -4139,7 +4171,7 @@ focus = {
 		available = {
 			has_idea = irn_zombie_decay
 		}
-		x = 17
+		x = 19
 		y = 11
 		available_if_capitulated = yes
 		completion_reward = {
@@ -4337,7 +4369,7 @@ focus = {
 		available = {
 			has_completed_focus = irn_nf_bos_10
 		}
-		x = 14
+		x = 13
 		y = 13
 		available_if_capitulated = yes
 		completion_reward = {
